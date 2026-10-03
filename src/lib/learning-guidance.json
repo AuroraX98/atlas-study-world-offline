@@ -1,0 +1,782 @@
+{
+  "assessment_note": "Use these as self-assessed practice prompts; they are not scores, certifications, or automatic correctness checks.",
+  "topics": {
+    "math-whole-number-operations": {
+      "practice_challenge": "Work a short grocery receipt with whole-number totals and estimate the final cost.",
+      "explain_it_prompt": "How can operation order change the result of a calculation?",
+      "prerequisites": []
+    },
+    "math-fractions-and-decimals": {
+      "practice_challenge": "Scale a simple recipe to serve twice as many people using fractions or decimals.",
+      "explain_it_prompt": "How are fractions, decimals, and percentages different ways to express quantity?",
+      "prerequisites": [
+        "math-whole-number-operations"
+      ]
+    },
+    "math-ratios-and-rates": {
+      "practice_challenge": "Plan a walk using a map scale or compare two travel rates in a small table.",
+      "explain_it_prompt": "What do the two quantities in a ratio or rate tell you?",
+      "prerequisites": [
+        "math-fractions-and-decimals"
+      ]
+    },
+    "math-coordinates-and-graphs": {
+      "practice_challenge": "Plot five hourly temperatures and label the axes and units.",
+      "explain_it_prompt": "What information does each axis and plotted point represent?",
+      "prerequisites": [
+        "math-whole-number-operations"
+      ]
+    },
+    "math-equations-and-inequalities": {
+      "practice_challenge": "Write and solve an inequality for how many items fit a fixed budget, then check it with a value.",
+      "explain_it_prompt": "How does the boundary of an inequality differ from the exact solution of an equation?",
+      "prerequisites": [
+        "math-whole-number-operations",
+        "math-fractions-and-decimals"
+      ]
+    },
+    "math-functions-and-graphs": {
+      "practice_challenge": "Make a table and sketch a graph for a rule such as y=2x+1.",
+      "explain_it_prompt": "How do an input, a function rule, and its output relate?",
+      "prerequisites": [
+        "math-equations-and-inequalities",
+        "math-coordinates-and-graphs"
+      ]
+    },
+    "math-geometry-and-measurement": {
+      "practice_challenge": "Estimate the volume of a small box and show the units in your calculation.",
+      "explain_it_prompt": "Which measurements determine the volume, and why do the units multiply?",
+      "prerequisites": [
+        "math-whole-number-operations"
+      ]
+    },
+    "math-data-and-probability": {
+      "practice_challenge": "Record 20 coin flips, summarize the outcomes, and compare the observed share with a prediction.",
+      "explain_it_prompt": "Why can a small sample differ from the probability-based expectation?",
+      "prerequisites": [
+        "math-ratios-and-rates",
+        "math-coordinates-and-graphs"
+      ]
+    },
+    "math-polynomial-patterns": {
+      "practice_challenge": "Factor a simple quadratic and use the factors to identify where its graph meets the horizontal axis.",
+      "explain_it_prompt": "How can factoring reveal roots of a polynomial?",
+      "prerequisites": [
+        "math-equations-and-inequalities",
+        "math-functions-and-graphs"
+      ]
+    },
+    "math-exponential-models": {
+      "practice_challenge": "Sketch linear and exponential growth from a small table of values.",
+      "explain_it_prompt": "What pattern distinguishes constant additive change from repeated multiplicative change?",
+      "prerequisites": [
+        "math-functions-and-graphs"
+      ]
+    },
+    "math-trigonometric-relationships": {
+      "practice_challenge": "Use a right triangle and one measured angle to estimate an unknown side.",
+      "explain_it_prompt": "How does a trigonometric ratio connect an angle with side lengths?",
+      "prerequisites": [
+        "math-geometry-and-measurement",
+        "math-functions-and-graphs"
+      ]
+    },
+    "math-sequences-and-series": {
+      "practice_challenge": "Describe a weekly savings pattern with a rule and calculate its total after several weeks.",
+      "explain_it_prompt": "How do recursive and explicit descriptions represent the same sequence?",
+      "prerequisites": [
+        "math-fractions-and-decimals",
+        "math-functions-and-graphs"
+      ]
+    },
+    "math-limits-and-continuity": {
+      "practice_challenge": "Make a table of values near x=2 for a simple function and estimate its limiting value.",
+      "explain_it_prompt": "How can a limit differ from the function value at the point?",
+      "prerequisites": [
+        "math-functions-and-graphs",
+        "math-sequences-and-series"
+      ]
+    },
+    "math-derivatives-and-integrals": {
+      "practice_challenge": "Use a position-versus-time sketch to estimate a slope and an area over an interval.",
+      "explain_it_prompt": "How do derivatives and integrals describe rate and accumulation?",
+      "prerequisites": [
+        "math-limits-and-continuity"
+      ]
+    },
+    "math-vectors-and-matrices": {
+      "practice_challenge": "Represent two linked quantities with a vector or a small matrix and perform one operation.",
+      "explain_it_prompt": "What information can vector or matrix notation organize compactly?",
+      "prerequisites": [
+        "math-coordinates-and-graphs"
+      ]
+    },
+    "math-proofs-and-optimization": {
+      "practice_challenge": "Model a fenced rectangular garden with a fixed amount of fencing and compare candidate areas.",
+      "explain_it_prompt": "What would make an argument that a chosen design is optimal convincing?",
+      "prerequisites": [
+        "math-equations-and-inequalities",
+        "math-geometry-and-measurement"
+      ]
+    },
+    "physics-units-and-measurement": {
+      "practice_challenge": "Measure three classroom objects and record each value with a unit and reasonable precision.",
+      "explain_it_prompt": "Why must a physical measurement include a unit?",
+      "prerequisites": []
+    },
+    "physics-vectors-and-motion": {
+      "practice_challenge": "Sketch a short walk as a vector and separate its direction from its distance.",
+      "explain_it_prompt": "How does a vector differ from a scalar description of motion?",
+      "prerequisites": [
+        "physics-units-and-measurement"
+      ]
+    },
+    "physics-forces-and-free-bodies": {
+      "practice_challenge": "Draw a free-body diagram for a book resting on a table and label the forces.",
+      "explain_it_prompt": "What does a free-body diagram include, and what does it leave out?",
+      "prerequisites": [
+        "physics-vectors-and-motion"
+      ]
+    },
+    "physics-work-and-energy": {
+      "practice_challenge": "Track a ball rolling down a ramp and describe where its energy changes form.",
+      "explain_it_prompt": "How does the work-energy idea connect forces with changes in motion?",
+      "prerequisites": [
+        "physics-forces-and-free-bodies"
+      ]
+    },
+    "physics-momentum-and-collisions": {
+      "practice_challenge": "Use before-and-after velocities to estimate the momentum change in a simple collision.",
+      "explain_it_prompt": "When can total momentum be treated as conserved in a collision?",
+      "prerequisites": [
+        "physics-vectors-and-motion",
+        "physics-forces-and-free-bodies"
+      ]
+    },
+    "physics-rotation-and-torque": {
+      "practice_challenge": "Compare how moving a door handle nearer or farther from its hinge changes the turning effect.",
+      "explain_it_prompt": "How do force direction and lever arm affect torque?",
+      "prerequisites": [
+        "physics-forces-and-free-bodies"
+      ]
+    },
+    "physics-oscillations-and-waves": {
+      "practice_challenge": "Record one swing or sound wave and mark its period and amplitude.",
+      "explain_it_prompt": "How are period, frequency, amplitude, and wavelength distinct?",
+      "prerequisites": [
+        "physics-vectors-and-motion",
+        "physics-work-and-energy"
+      ]
+    },
+    "physics-heat-and-thermodynamics": {
+      "practice_challenge": "Sketch heat moving between a warm mug and cooler surroundings.",
+      "explain_it_prompt": "How does energy conservation help describe heat transfer?",
+      "prerequisites": [
+        "physics-units-and-measurement",
+        "physics-work-and-energy"
+      ]
+    },
+    "physics-electric-fields-and-potential": {
+      "practice_challenge": "Draw two point charges and sketch the electric field direction at several locations.",
+      "explain_it_prompt": "How is electric potential different from electric field?",
+      "prerequisites": [
+        "physics-vectors-and-motion",
+        "physics-work-and-energy"
+      ]
+    },
+    "physics-circuits-and-magnetism": {
+      "practice_challenge": "Draw a one-loop battery-and-resistor circuit and annotate current and voltage.",
+      "explain_it_prompt": "How are current and voltage related but different in a circuit?",
+      "prerequisites": [
+        "physics-electric-fields-and-potential"
+      ]
+    },
+    "physics-light-and-optics": {
+      "practice_challenge": "Trace a light ray reflecting from a mirror or bending through a lens.",
+      "explain_it_prompt": "When is a ray model useful for describing light?",
+      "prerequisites": [
+        "physics-oscillations-and-waves"
+      ]
+    },
+    "physics-relativity-and-modern-physics": {
+      "practice_challenge": "Choose a fast-moving or small-scale example and explain why a classical model may be insufficient.",
+      "explain_it_prompt": "What changes when a physical system is described by modern rather than classical physics?",
+      "prerequisites": [
+        "physics-vectors-and-motion",
+        "physics-work-and-energy"
+      ]
+    },
+    "physics-fluids-and-flow": {
+      "practice_challenge": "Compare pressure at two depths in a still fluid using a labeled sketch.",
+      "explain_it_prompt": "How do depth and density affect pressure in a resting fluid?",
+      "prerequisites": [
+        "physics-units-and-measurement",
+        "physics-work-and-energy"
+      ]
+    },
+    "physics-statistical-physics": {
+      "practice_challenge": "Use a box of gas particles to sketch how random motion relates to temperature.",
+      "explain_it_prompt": "How can microscopic motion help explain a bulk thermal property?",
+      "prerequisites": [
+        "physics-heat-and-thermodynamics"
+      ]
+    },
+    "physics-quantum-models": {
+      "practice_challenge": "Describe a quantum-model prediction for a particle confined to a small region.",
+      "explain_it_prompt": "How does a quantum model express predictions differently from a single classical path?",
+      "prerequisites": [
+        "physics-relativity-and-modern-physics",
+        "physics-oscillations-and-waves"
+      ]
+    },
+    "physics-computational-physics": {
+      "practice_challenge": "Write a few steps of a simple numerical model for an object moving at steady speed.",
+      "explain_it_prompt": "What assumptions should be stated before trusting a computed physical result?",
+      "prerequisites": [
+        "physics-vectors-and-motion",
+        "coding-functions-and-parameters"
+      ]
+    },
+    "quantum-complex-numbers": {
+      "practice_challenge": "Plot three complex numbers on an Argand diagram and label magnitude and phase.",
+      "explain_it_prompt": "What do magnitude and phase each describe in a complex number?",
+      "prerequisites": [
+        "math-coordinates-and-graphs"
+      ]
+    },
+    "quantum-probability-and-waves": {
+      "practice_challenge": "Sketch a wave packet and identify what a probability description adds to it.",
+      "explain_it_prompt": "How does a wave description differ from a definite classical trajectory?",
+      "prerequisites": [
+        "quantum-complex-numbers"
+      ]
+    },
+    "quantum-superposition": {
+      "practice_challenge": "Combine two simple state amplitudes on paper and describe the resulting superposition.",
+      "explain_it_prompt": "What does it mean for a system to be in a superposition of states?",
+      "prerequisites": [
+        "quantum-complex-numbers",
+        "quantum-probability-and-waves"
+      ]
+    },
+    "quantum-measurement-outcomes": {
+      "practice_challenge": "For a two-outcome measurement, list possible results and a hypothetical probability distribution.",
+      "explain_it_prompt": "How is a predicted distribution different from the result of one measurement?",
+      "prerequisites": [
+        "quantum-probability-and-waves",
+        "quantum-superposition"
+      ]
+    },
+    "quantum-wavefunctions-and-probability": {
+      "practice_challenge": "Normalize a simple wavefunction and use its squared magnitude to compare probabilities in two regions.",
+      "explain_it_prompt": "How does a wavefunction support probability predictions?",
+      "prerequisites": [
+        "quantum-probability-and-waves",
+        "quantum-measurement-outcomes"
+      ]
+    },
+    "quantum-uncertainty-relations": {
+      "practice_challenge": "Use an uncertainty relation to compare what happens when position uncertainty is made smaller.",
+      "explain_it_prompt": "What does an uncertainty relation say, and what does it not say?",
+      "prerequisites": [
+        "quantum-wavefunctions-and-probability"
+      ]
+    },
+    "quantum-schrodinger-equation": {
+      "practice_challenge": "Annotate a one-dimensional Schrodinger equation with the roles of state, energy, and time.",
+      "explain_it_prompt": "What role does the Schrodinger equation play in describing a quantum state?",
+      "prerequisites": [
+        "quantum-wavefunctions-and-probability",
+        "quantum-complex-numbers"
+      ]
+    },
+    "quantum-bound-states-and-tunneling": {
+      "practice_challenge": "Sketch a finite potential barrier and mark the classically forbidden region and possible tunneling.",
+      "explain_it_prompt": "Why can a quantum particle have a nonzero transmission probability through a barrier?",
+      "prerequisites": [
+        "quantum-schrodinger-equation"
+      ]
+    },
+    "quantum-spin-and-angular-momentum": {
+      "practice_challenge": "Compare a spin measurement along two different axes using a simple state diagram.",
+      "explain_it_prompt": "How is intrinsic spin different from orbital motion around a center?",
+      "prerequisites": [
+        "quantum-superposition",
+        "quantum-measurement-outcomes"
+      ]
+    },
+    "quantum-hydrogen-and-orbitals": {
+      "practice_challenge": "Label the main quantum numbers in a simplified hydrogen energy-level diagram.",
+      "explain_it_prompt": "How do quantum numbers organize allowed states in a hydrogen atom?",
+      "prerequisites": [
+        "quantum-schrodinger-equation",
+        "quantum-spin-and-angular-momentum"
+      ]
+    },
+    "quantum-identical-particles": {
+      "practice_challenge": "Place two identical fermions into a small set of available states and mark which placements are excluded.",
+      "explain_it_prompt": "How does the exclusion principle constrain identical fermions?",
+      "prerequisites": [
+        "quantum-spin-and-angular-momentum",
+        "quantum-hydrogen-and-orbitals"
+      ]
+    },
+    "quantum-approximation-methods": {
+      "practice_challenge": "Approximate the effect of a small change to a simple potential and list the assumptions you used.",
+      "explain_it_prompt": "Why do physicists use approximation methods for systems without a convenient exact solution?",
+      "prerequisites": [
+        "quantum-schrodinger-equation",
+        "quantum-bound-states-and-tunneling"
+      ]
+    },
+    "quantum-density-matrices": {
+      "practice_challenge": "Compare a pure-state description with a mixed-state description in a small two-state example.",
+      "explain_it_prompt": "What extra situations can a density matrix describe?",
+      "prerequisites": [
+        "quantum-complex-numbers",
+        "quantum-measurement-outcomes"
+      ]
+    },
+    "quantum-entanglement-and-correlations": {
+      "practice_challenge": "Draw a two-part state and mark which correlations would be lost if each part were independent.",
+      "explain_it_prompt": "What makes entanglement different from ordinary statistical correlation?",
+      "prerequisites": [
+        "quantum-superposition",
+        "quantum-density-matrices"
+      ]
+    },
+    "quantum-decoherence-and-noise": {
+      "practice_challenge": "Draw a system interacting with its surroundings and note one way that coherence can be reduced.",
+      "explain_it_prompt": "How can an environment affect the coherence of a quantum system?",
+      "prerequisites": [
+        "quantum-density-matrices",
+        "quantum-entanglement-and-correlations"
+      ]
+    },
+    "quantum-quantum-information": {
+      "practice_challenge": "Trace a simple one-qubit circuit through a gate and a final measurement.",
+      "explain_it_prompt": "How do states, gates, and measurements combine in a quantum information task?",
+      "prerequisites": [
+        "quantum-superposition",
+        "quantum-measurement-outcomes"
+      ]
+    },
+    "coding-values-and-expressions": {
+      "practice_challenge": "Write a short expression that converts a temperature or distance and display the result.",
+      "explain_it_prompt": "What is the difference between a value, a variable, and an expression?",
+      "prerequisites": []
+    },
+    "coding-input-and-output": {
+      "practice_challenge": "Ask for a name and print a personalized greeting.",
+      "explain_it_prompt": "How does input become output in a small program?",
+      "prerequisites": [
+        "coding-values-and-expressions"
+      ]
+    },
+    "coding-conditions": {
+      "practice_challenge": "Write a program that displays one message when a number is positive and another otherwise.",
+      "explain_it_prompt": "How does a condition determine which branch runs?",
+      "prerequisites": [
+        "coding-values-and-expressions"
+      ]
+    },
+    "coding-loops": {
+      "practice_challenge": "Use a loop to display a numbered list and state its stopping condition.",
+      "explain_it_prompt": "How does a loop make repetition explicit and bounded?",
+      "prerequisites": [
+        "coding-conditions"
+      ]
+    },
+    "coding-functions-and-parameters": {
+      "practice_challenge": "Write a function that converts minutes to hours and returns the result.",
+      "explain_it_prompt": "What roles do parameters and return values play in a function?",
+      "prerequisites": [
+        "coding-values-and-expressions",
+        "coding-conditions"
+      ]
+    },
+    "coding-collections": {
+      "practice_challenge": "Store a short list of items and loop over it to display each one.",
+      "explain_it_prompt": "How does a collection help manage related values?",
+      "prerequisites": [
+        "coding-values-and-expressions",
+        "coding-loops"
+      ]
+    },
+    "coding-files-and-errors": {
+      "practice_challenge": "Read a small text file and handle the case where the file is missing.",
+      "explain_it_prompt": "Why should file operations account for possible errors?",
+      "prerequisites": [
+        "coding-input-and-output"
+      ]
+    },
+    "coding-modules-and-packages": {
+      "practice_challenge": "Move a reusable helper into a module and import it from another file.",
+      "explain_it_prompt": "What problem can modules and packages solve as a codebase grows?",
+      "prerequisites": [
+        "coding-functions-and-parameters",
+        "coding-files-and-errors"
+      ]
+    },
+    "coding-algorithms-and-complexity": {
+      "practice_challenge": "Compare a single-loop and nested-loop approach on a growing sample input.",
+      "explain_it_prompt": "How can input size affect the amount of work an algorithm performs?",
+      "prerequisites": [
+        "coding-loops"
+      ]
+    },
+    "coding-data-structures": {
+      "practice_challenge": "Choose a list, set, or dictionary for a small lookup task and implement one operation.",
+      "explain_it_prompt": "Which operation made your chosen data structure a good fit?",
+      "prerequisites": [
+        "coding-collections"
+      ]
+    },
+    "coding-testing-and-debugging": {
+      "practice_challenge": "Write a test for one function, introduce a small bug, and use the failure to locate it.",
+      "explain_it_prompt": "How does a focused test help narrow down a bug?",
+      "prerequisites": [
+        "coding-functions-and-parameters",
+        "coding-collections"
+      ]
+    },
+    "coding-object-oriented-design": {
+      "practice_challenge": "Model a book and its loan status with a small class and a clear method.",
+      "explain_it_prompt": "When does grouping data and behavior in an object help clarify a program?",
+      "prerequisites": [
+        "coding-functions-and-parameters",
+        "coding-collections"
+      ]
+    },
+    "coding-recursion-and-invariants": {
+      "practice_challenge": "Write a recursive function for a small countdown and identify its base case.",
+      "explain_it_prompt": "Why does recursion need a base case and a progress step?",
+      "prerequisites": [
+        "coding-functions-and-parameters",
+        "coding-conditions"
+      ]
+    },
+    "coding-concurrency-and-events": {
+      "practice_challenge": "Sketch an event-driven program with two tasks and identify where their timing can interact.",
+      "explain_it_prompt": "What can go wrong when concurrent tasks share state or depend on timing?",
+      "prerequisites": [
+        "coding-modules-and-packages",
+        "coding-testing-and-debugging"
+      ]
+    },
+    "coding-databases-and-persistence": {
+      "practice_challenge": "Save a small set of records and retrieve one by a chosen field.",
+      "explain_it_prompt": "What should a persistence layer handle when storing and retrieving structured data?",
+      "prerequisites": [
+        "coding-collections",
+        "coding-files-and-errors"
+      ]
+    },
+    "coding-architecture-and-interfaces": {
+      "practice_challenge": "Draw a small application as components and write what each component is responsible for.",
+      "explain_it_prompt": "How do clear interfaces reduce unwanted dependencies between parts?",
+      "prerequisites": [
+        "coding-modules-and-packages",
+        "coding-object-oriented-design"
+      ]
+    },
+    "ai-ai-systems-and-tasks": {
+      "practice_challenge": "Choose a familiar AI feature and list its input, output, and intended goal.",
+      "explain_it_prompt": "How can a task description help clarify what an AI system is meant to do?",
+      "prerequisites": []
+    },
+    "ai-search-and-state-spaces": {
+      "practice_challenge": "Represent a small maze as states, legal moves, and a goal state.",
+      "explain_it_prompt": "What choices define a search problem?",
+      "prerequisites": [
+        "ai-ai-systems-and-tasks"
+      ]
+    },
+    "ai-data-and-features": {
+      "practice_challenge": "For a simple sorting task, list example records and possible useful features.",
+      "explain_it_prompt": "How can feature choices affect what a system can learn from data?",
+      "prerequisites": [
+        "ai-ai-systems-and-tasks"
+      ]
+    },
+    "ai-rules-and-logic": {
+      "practice_challenge": "Write three simple rules for sorting objects and trace which rule applies to one example.",
+      "explain_it_prompt": "How do explicit rules differ from patterns learned from examples?",
+      "prerequisites": [
+        "ai-ai-systems-and-tasks"
+      ]
+    },
+    "ai-classification-and-regression": {
+      "practice_challenge": "For one dataset, write an example of a category prediction and a number prediction.",
+      "explain_it_prompt": "How do classification and regression differ in the kind of output they predict?",
+      "prerequisites": [
+        "ai-data-and-features"
+      ]
+    },
+    "ai-training-and-evaluation": {
+      "practice_challenge": "Split a tiny labeled dataset into training and evaluation examples and note your method.",
+      "explain_it_prompt": "Why should evaluation examples be separate from those used for training?",
+      "prerequisites": [
+        "ai-classification-and-regression"
+      ]
+    },
+    "ai-decision-trees-and-neighbors": {
+      "practice_challenge": "Build a small decision tree from three examples and trace one new case through it.",
+      "explain_it_prompt": "How does a decision tree turn feature tests into a prediction?",
+      "prerequisites": [
+        "ai-training-and-evaluation",
+        "ai-data-and-features"
+      ]
+    },
+    "ai-probability-and-uncertainty": {
+      "practice_challenge": "Give a prediction with two possible outcomes and assign illustrative probabilities that sum to one.",
+      "explain_it_prompt": "How does a probabilistic prediction represent uncertainty?",
+      "prerequisites": [
+        "ai-classification-and-regression",
+        "ai-data-and-features"
+      ]
+    },
+    "ai-neural-network-basics": {
+      "practice_challenge": "Draw a tiny two-layer neural network and label its inputs, weights, and output.",
+      "explain_it_prompt": "At a high level, how do layers and weights contribute to a network prediction?",
+      "prerequisites": [
+        "ai-classification-and-regression",
+        "ai-training-and-evaluation"
+      ]
+    },
+    "ai-language-models": {
+      "practice_challenge": "Compare two generated text responses to the same prompt and mark one claim to verify.",
+      "explain_it_prompt": "Why can a fluent language-model response still need fact checking?",
+      "prerequisites": [
+        "ai-neural-network-basics",
+        "ai-data-and-features"
+      ]
+    },
+    "ai-reinforcement-learning": {
+      "practice_challenge": "Describe a small game as an agent, actions, environment, and rewards.",
+      "explain_it_prompt": "How does reinforcement learning use feedback from an environment?",
+      "prerequisites": [
+        "ai-search-and-state-spaces",
+        "ai-ai-systems-and-tasks"
+      ]
+    },
+    "ai-generative-ai": {
+      "practice_challenge": "Ask a generative tool for two alternatives and record one useful result and one limitation.",
+      "explain_it_prompt": "How does generative AI differ from retrieving a stored example verbatim?",
+      "prerequisites": [
+        "ai-language-models",
+        "ai-neural-network-basics"
+      ]
+    },
+    "ai-model-robustness": {
+      "practice_challenge": "Change one input condition in a model example and note whether the output changes unexpectedly.",
+      "explain_it_prompt": "What kinds of input changes can reveal model fragility?",
+      "prerequisites": [
+        "ai-training-and-evaluation"
+      ]
+    },
+    "ai-fairness-and-bias": {
+      "practice_challenge": "Review a small set of examples for representation gaps and note who may be underserved.",
+      "explain_it_prompt": "How can gaps or skew in data affect different groups?",
+      "prerequisites": [
+        "ai-data-and-features",
+        "ai-training-and-evaluation"
+      ]
+    },
+    "ai-privacy-and-safety": {
+      "practice_challenge": "For a hypothetical assistant, identify one sensitive input and propose a way to limit exposure.",
+      "explain_it_prompt": "What privacy and safety questions should be asked before using an AI feature?",
+      "prerequisites": [
+        "ai-data-and-features",
+        "ai-ai-systems-and-tasks"
+      ]
+    },
+    "ai-ai-system-evaluation": {
+      "practice_challenge": "Draft an evaluation plan with one performance measure, one limitation check, and one impact question.",
+      "explain_it_prompt": "Why should AI evaluation consider context and consequences as well as a score?",
+      "prerequisites": [
+        "ai-training-and-evaluation",
+        "ai-privacy-and-safety"
+      ]
+    },
+    "art-line-control": {
+      "practice_challenge": "Draw ten lines with different directions and pressures, then circle two that feel controlled.",
+      "explain_it_prompt": "What changes in a line when direction, pressure, or speed changes?",
+      "prerequisites": []
+    },
+    "art-observational-sketching": {
+      "practice_challenge": "Sketch a cup from life, then note two differences between the sketch and the cup.",
+      "explain_it_prompt": "What details were easiest to notice by looking back and forth at the subject?",
+      "prerequisites": [
+        "art-line-control"
+      ]
+    },
+    "art-simple-shapes": {
+      "practice_challenge": "Redraw a household object using only circles, boxes, and cylinders.",
+      "explain_it_prompt": "How can simple shapes help organize a more complex subject?",
+      "prerequisites": [
+        "art-line-control",
+        "art-observational-sketching"
+      ]
+    },
+    "art-basic-proportion": {
+      "practice_challenge": "Compare the width and height of a simple object and mark its main divisions.",
+      "explain_it_prompt": "How can relative measurements help keep a drawing proportionate?",
+      "prerequisites": [
+        "art-simple-shapes",
+        "art-observational-sketching"
+      ]
+    },
+    "art-perspective-basics": {
+      "practice_challenge": "Draw a box using a horizon line and one vanishing point.",
+      "explain_it_prompt": "How do the horizon and vanishing point help suggest depth?",
+      "prerequisites": [
+        "art-basic-proportion",
+        "art-simple-shapes"
+      ]
+    },
+    "art-light-and-shadow": {
+      "practice_challenge": "Shade a sphere with a chosen light direction and add a cast shadow.",
+      "explain_it_prompt": "How do light direction and form affect the pattern of light and shadow?",
+      "prerequisites": [
+        "art-simple-shapes"
+      ]
+    },
+    "art-form-in-space": {
+      "practice_challenge": "Build a small object sketch from overlapping boxes, cylinders, or spheres.",
+      "explain_it_prompt": "How does thinking in three-dimensional forms change a flat outline?",
+      "prerequisites": [
+        "art-simple-shapes",
+        "art-perspective-basics"
+      ]
+    },
+    "art-texture-studies": {
+      "practice_challenge": "Draw the same leaf using three mark patterns to suggest smooth, rough, and ribbed surfaces.",
+      "explain_it_prompt": "How can repeated marks suggest texture without outlining every detail?",
+      "prerequisites": [
+        "art-observational-sketching",
+        "art-form-in-space"
+      ]
+    },
+    "art-gesture-and-rhythm": {
+      "practice_challenge": "Make a 30-second gesture sketch of a person or animal in a single pose.",
+      "explain_it_prompt": "Which few lines or curves communicate the pose\u2019s main action?",
+      "prerequisites": [
+        "art-line-control",
+        "art-basic-proportion"
+      ]
+    },
+    "art-figure-anatomy": {
+      "practice_challenge": "Block a standing figure with simple masses and mark how they connect.",
+      "explain_it_prompt": "How can underlying forms help organize visible body parts?",
+      "prerequisites": [
+        "art-form-in-space",
+        "art-gesture-and-rhythm"
+      ]
+    },
+    "art-composition-and-focus": {
+      "practice_challenge": "Make three small thumbnails that place the main subject in different parts of the frame.",
+      "explain_it_prompt": "How can placement and contrast guide a viewer\u2019s attention?",
+      "prerequisites": [
+        "art-simple-shapes",
+        "art-observational-sketching"
+      ]
+    },
+    "art-portrait-structure": {
+      "practice_challenge": "Sketch a face using a few guide lines for the major features.",
+      "explain_it_prompt": "How do simple guides help relate facial features to the head shape?",
+      "prerequisites": [
+        "art-basic-proportion",
+        "art-form-in-space"
+      ]
+    },
+    "art-complex-scene-planning": {
+      "practice_challenge": "Plan a street or room scene with foreground, middle ground, and background shapes.",
+      "explain_it_prompt": "How can overlapping planes and perspective organize a complex scene?",
+      "prerequisites": [
+        "art-perspective-basics",
+        "art-composition-and-focus"
+      ]
+    },
+    "art-materials-and-surface": {
+      "practice_challenge": "Draw two objects with different surfaces and vary edge, mark, and texture.",
+      "explain_it_prompt": "Which visual clues make one surface feel different from another?",
+      "prerequisites": [
+        "art-texture-studies",
+        "art-light-and-shadow"
+      ]
+    },
+    "art-color-and-atmosphere": {
+      "practice_challenge": "Create a small scene with a limited palette and warmer or cooler distant colors.",
+      "explain_it_prompt": "How can color and value suggest atmosphere and depth?",
+      "prerequisites": [
+        "art-light-and-shadow",
+        "art-perspective-basics"
+      ]
+    },
+    "art-finished-drawing-project": {
+      "practice_challenge": "Choose a personal subject, make a thumbnail, develop the forms, and finish one drawing.",
+      "explain_it_prompt": "Which decisions helped you carry the drawing from first layout to finished piece?",
+      "prerequisites": [
+        "art-complex-scene-planning",
+        "art-composition-and-focus"
+      ]
+    }
+  },
+  "language_challenges": {
+    "spanish": [
+      {
+        "practice_challenge": "Order a snack, ask its price, and confirm one detail in a short role-play.",
+        "explain_it_prompt": "Which phrase helped you ask for the item and check its price? "
+      },
+      {
+        "practice_challenge": "Ask for directions to a nearby place and write down the route you understood.",
+        "explain_it_prompt": "How did you check that the directions matched the destination? "
+      },
+      {
+        "practice_challenge": "Write a four-line message about a recent day, including one past event.",
+        "explain_it_prompt": "Which words show when the events happened? "
+      },
+      {
+        "practice_challenge": "Read a short event notice and note who, where, and when.",
+        "explain_it_prompt": "Which words in the notice gave you the time and place? "
+      }
+    ],
+    "german": [
+      {
+        "practice_challenge": "Introduce yourself and ask someone one simple question about their day.",
+        "explain_it_prompt": "Which words did you use to introduce yourself and invite a reply? "
+      },
+      {
+        "practice_challenge": "Ask for an item in a shop and check its price or size.",
+        "explain_it_prompt": "How did you confirm which item and price you meant? "
+      },
+      {
+        "practice_challenge": "Write a short message describing one plan for the weekend.",
+        "explain_it_prompt": "Which words make the plan and its timing clear? "
+      },
+      {
+        "practice_challenge": "Read a short transit notice and note the departure time and destination.",
+        "explain_it_prompt": "Which parts of the notice helped you identify the time and destination? "
+      }
+    ],
+    "latin": [
+      {
+        "practice_challenge": "Read a short adapted Latin passage and mark the words you can identify before translating it.",
+        "explain_it_prompt": "Which clues helped you decide how the Latin words fit together? "
+      },
+      {
+        "practice_challenge": "Translate two adapted sentences and annotate the subject, main verb, and one case ending.",
+        "explain_it_prompt": "How did the verb and case endings help you interpret the sentence? "
+      },
+      {
+        "practice_challenge": "Compare two translations of one short Latin sentence and note one difference in word order.",
+        "explain_it_prompt": "Why can Latin word order differ from the order used in an English translation? "
+      },
+      {
+        "practice_challenge": "Read a short adapted inscription and write a plain-language paraphrase with a note about one uncertain word.",
+        "explain_it_prompt": "What context helped you choose a meaning, and what remains uncertain? "
+      }
+    ]
+  }
+}

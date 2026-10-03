@@ -1,0 +1,578 @@
+{
+  "math": {
+    "subject": "Math",
+    "accent_color": "#5B8DEF",
+    "achievements": [
+      {
+        "hours": 1,
+        "name": "Pencil Sprout",
+        "description": "A tiny pencil-shaped sprout for the island garden."
+      },
+      {
+        "hours": 3,
+        "name": "Number Pebbles",
+        "description": "A ring of smooth, numbered stones for the path."
+      },
+      {
+        "hours": 6,
+        "name": "Compass Kite",
+        "description": "A blue kite with a compass rose that circles the island."
+      },
+      {
+        "hours": 10,
+        "name": "Pattern Arch",
+        "description": "A tiled arch that adds a geometric landmark."
+      },
+      {
+        "hours": 20,
+        "name": "Orbiting Abacus",
+        "description": "A small abacus that floats in a slow orbit above the island."
+      },
+      {
+        "hours": 35,
+        "name": "Golden Ratio Tree",
+        "description": "A sculpted tree whose curling branches form a spiral."
+      },
+      {
+        "hours": 50,
+        "name": "Prism Observatory",
+        "description": "A glass observatory with colorful measuring rings."
+      },
+      {
+        "hours": 75,
+        "name": "Equation Fountain",
+        "description": "A fountain whose water loops through glowing symbols."
+      },
+      {
+        "hours": 100,
+        "name": "Celestial Orrery",
+        "description": "A tabletop orrery with gently turning mathematical orbits."
+      },
+      {
+        "hours": 150,
+        "name": "Infinite Stairway",
+        "description": "A decorative stairway that curls into a floating loop."
+      }
+    ],
+    "suggested_topic_milestones": [
+      "Number patterns",
+      "Fractions and ratios",
+      "Geometry and shape",
+      "Algebraic expressions",
+      "Probability",
+      "Graphs and functions"
+    ]
+  },
+  "spanish": {
+    "subject": "Spanish",
+    "accent_color": "#E85D4A",
+    "achievements": [
+      {
+        "hours": 1,
+        "name": "Paper Fan",
+        "description": "A painted folding fan that rests beside the island path."
+      },
+      {
+        "hours": 3,
+        "name": "Citrus Lantern",
+        "description": "A warm lantern shaped like a little orange."
+      },
+      {
+        "hours": 6,
+        "name": "Tile Fountain",
+        "description": "A small fountain wrapped in bright patterned tiles."
+      },
+      {
+        "hours": 10,
+        "name": "Marigold Balcony",
+        "description": "A balcony planter overflowing with golden marigolds."
+      },
+      {
+        "hours": 20,
+        "name": "Guitar Weathervane",
+        "description": "A miniature guitar weathervane that turns in the breeze."
+      },
+      {
+        "hours": 35,
+        "name": "Carnival Confetti",
+        "description": "A gentle burst of colorful confetti that drifts around the island."
+      },
+      {
+        "hours": 50,
+        "name": "Red Silk Cape",
+        "description": "A flowing red cape for the island traveler avatar."
+      },
+      {
+        "hours": 75,
+        "name": "Desert Moon Arch",
+        "description": "A moonlit adobe arch for a quiet island corner."
+      },
+      {
+        "hours": 100,
+        "name": "Festival Plaza",
+        "description": "A miniature plaza with bunting, tilework, and paper lanterns."
+      },
+      {
+        "hours": 150,
+        "name": "Sunset Skybridge",
+        "description": "A curved bridge glowing in coral and gold at dusk."
+      }
+    ],
+    "suggested_topic_milestones": [
+      "Greetings and introductions",
+      "Everyday routines",
+      "Food and ordering",
+      "Directions around town",
+      "Past events",
+      "Music and celebrations"
+    ]
+  },
+  "german": {
+    "subject": "German",
+    "accent_color": "#D94B48",
+    "achievements": [
+      {
+        "hours": 1,
+        "name": "Acorn Clock",
+        "description": "A tiny cuckoo clock carved like an acorn."
+      },
+      {
+        "hours": 3,
+        "name": "Pinecone Path",
+        "description": "A winding path edged with oversized pinecones."
+      },
+      {
+        "hours": 6,
+        "name": "Gingerbread Gate",
+        "description": "A candy-colored gate with icing-like trim."
+      },
+      {
+        "hours": 10,
+        "name": "Forest Bell",
+        "description": "A brass bell hanging from a mossy wooden frame."
+      },
+      {
+        "hours": 20,
+        "name": "Paper Windmill",
+        "description": "A bright paper windmill that spins above a flower bed."
+      },
+      {
+        "hours": 35,
+        "name": "Alpine Footbridge",
+        "description": "A timber footbridge with painted flower details."
+      },
+      {
+        "hours": 50,
+        "name": "Black Forest Cabin",
+        "description": "A cozy miniature cabin tucked among fir trees."
+      },
+      {
+        "hours": 75,
+        "name": "Amber Stag Crown",
+        "description": "A lightweight amber antler crown for the avatar."
+      },
+      {
+        "hours": 100,
+        "name": "Clockwork Glider",
+        "description": "A wooden glider with decorative gears and painted wings."
+      },
+      {
+        "hours": 150,
+        "name": "Northern Lights Tower",
+        "description": "A tall lookout tower washed in ribbons of green light."
+      }
+    ],
+    "suggested_topic_milestones": [
+      "Introductions and names",
+      "Time and schedules",
+      "Home and neighborhood",
+      "Meals and groceries",
+      "Travel plans",
+      "Stories from the past"
+    ]
+  },
+  "latin": {
+    "subject": "Latin",
+    "accent_color": "#B48755",
+    "achievements": [
+      {
+        "hours": 1,
+        "name": "Laurel Sprig",
+        "description": "A small laurel sprig tucked into the island soil."
+      },
+      {
+        "hours": 3,
+        "name": "Wax Tablet",
+        "description": "A miniature wax tablet set beside a writing bench."
+      },
+      {
+        "hours": 6,
+        "name": "Column Capital",
+        "description": "A carved column top repurposed as a garden ornament."
+      },
+      {
+        "hours": 10,
+        "name": "Roman Mosaic",
+        "description": "A square mosaic depicting a tiny island bird."
+      },
+      {
+        "hours": 20,
+        "name": "Scroll Parasol",
+        "description": "A rolled parchment parasol that shades a stone seat."
+      },
+      {
+        "hours": 35,
+        "name": "Olive Grove",
+        "description": "A cluster of silvery olive trees around a courtyard."
+      },
+      {
+        "hours": 50,
+        "name": "Forum Pavilion",
+        "description": "An open-sided pavilion with miniature marble columns."
+      },
+      {
+        "hours": 75,
+        "name": "Laurel Circlet",
+        "description": "A fine laurel circlet worn by the avatar."
+      },
+      {
+        "hours": 100,
+        "name": "Aquila Wind Sculpture",
+        "description": "A stylized eagle sculpture that turns with the wind."
+      },
+      {
+        "hours": 150,
+        "name": "Marble Sky Atrium",
+        "description": "A bright marble atrium with a reflecting pool."
+      }
+    ],
+    "suggested_topic_milestones": [
+      "Latin sounds and spelling",
+      "Noun forms",
+      "Verb forms",
+      "Common sentence patterns",
+      "Roman daily life",
+      "Short adapted passages"
+    ]
+  },
+  "physics": {
+    "subject": "Physics",
+    "accent_color": "#39AFA0",
+    "achievements": [
+      {
+        "hours": 1,
+        "name": "Copper Pendulum",
+        "description": "A small pendulum hanging from a driftwood frame."
+      },
+      {
+        "hours": 3,
+        "name": "Wind Gauge",
+        "description": "A spinning weather vane with tiny measurement marks."
+      },
+      {
+        "hours": 6,
+        "name": "Balance Beam",
+        "description": "A miniature balance beam with floating brass weights."
+      },
+      {
+        "hours": 10,
+        "name": "Waveglass Window",
+        "description": "A round window filled with gently shifting blue waves."
+      },
+      {
+        "hours": 20,
+        "name": "Magnetic Garden",
+        "description": "A decorative garden where iron petals hover above their stems."
+      },
+      {
+        "hours": 35,
+        "name": "Gyroscope Fountain",
+        "description": "A fountain surrounded by slowly spinning metal rings."
+      },
+      {
+        "hours": 50,
+        "name": "Aurora Coil",
+        "description": "A luminous coil that arcs soft color across the island."
+      },
+      {
+        "hours": 75,
+        "name": "Sundial Pavilion",
+        "description": "A stone pavilion whose sculpted shadow marks the ground."
+      },
+      {
+        "hours": 100,
+        "name": "Starlight Telescope",
+        "description": "A brass telescope with a twinkling viewfinder."
+      },
+      {
+        "hours": 150,
+        "name": "Gravity Garden",
+        "description": "A floating garden of stones and plants arranged in playful arcs."
+      }
+    ],
+    "suggested_topic_milestones": [
+      "Motion and speed",
+      "Forces and balance",
+      "Energy changes",
+      "Waves and sound",
+      "Electric circuits",
+      "Light and optics"
+    ]
+  },
+  "quantum": {
+    "subject": "Quantum Physics",
+    "accent_color": "#9967D8",
+    "achievements": [
+      {
+        "hours": 1,
+        "name": "Probability Mote",
+        "description": "A violet mote that softly flickers above the island."
+      },
+      {
+        "hours": 3,
+        "name": "Waveform Fern",
+        "description": "A fern with curling leaves shaped like wave traces."
+      },
+      {
+        "hours": 6,
+        "name": "Tunneling Door",
+        "description": "A tiny glowing doorway set into a floating rock."
+      },
+      {
+        "hours": 10,
+        "name": "Entangled Globes",
+        "description": "Two glass globes that shimmer in matching colors."
+      },
+      {
+        "hours": 20,
+        "name": "Photon Butterfly",
+        "description": "A translucent butterfly with sparkling wings."
+      },
+      {
+        "hours": 35,
+        "name": "Uncertainty Veil",
+        "description": "A gauzy cape patterned with shifting points of light."
+      },
+      {
+        "hours": 50,
+        "name": "Quantum Terrarium",
+        "description": "A glass terrarium with tiny, changing miniature scenes."
+      },
+      {
+        "hours": 75,
+        "name": "Superposition Pool",
+        "description": "A reflective pool that displays two colors at once."
+      },
+      {
+        "hours": 100,
+        "name": "Vacuum Bloom",
+        "description": "A luminous flower that releases decorative specks of light."
+      },
+      {
+        "hours": 150,
+        "name": "Hilbert Sky Pavilion",
+        "description": "A pavilion of layered arches fading into a starry canopy."
+      }
+    ],
+    "suggested_topic_milestones": [
+      "Wave-particle descriptions",
+      "Quantum states",
+      "Measurement and probability",
+      "Superposition",
+      "Entanglement",
+      "Quantum technologies in overview"
+    ]
+  },
+  "coding": {
+    "subject": "Coding",
+    "accent_color": "#48A868",
+    "achievements": [
+      {
+        "hours": 1,
+        "name": "Pixel Sprout",
+        "description": "A blocky green sprout with a tiny glowing cursor."
+      },
+      {
+        "hours": 3,
+        "name": "Copper Keycap",
+        "description": "A decorative oversized keycap set beside the path."
+      },
+      {
+        "hours": 6,
+        "name": "Looping Gear",
+        "description": "A little gear that rolls in a cheerful repeating loop."
+      },
+      {
+        "hours": 10,
+        "name": "Syntax Signpost",
+        "description": "A wooden sign with colorful punctuation-shaped arrows."
+      },
+      {
+        "hours": 20,
+        "name": "Debugging Firefly",
+        "description": "A glowing firefly that hovers near the avatar's shoulder."
+      },
+      {
+        "hours": 35,
+        "name": "Branching Bridge",
+        "description": "A forked footbridge with two paths that rejoin."
+      },
+      {
+        "hours": 50,
+        "name": "Terminal Treehouse",
+        "description": "A treehouse with a softly scrolling display window."
+      },
+      {
+        "hours": 75,
+        "name": "Pixel Cape",
+        "description": "A bright cape edged with a neat pixel pattern."
+      },
+      {
+        "hours": 100,
+        "name": "Recursive Waterfall",
+        "description": "A tiered waterfall whose smaller streams echo its shape."
+      },
+      {
+        "hours": 150,
+        "name": "Compiler Lighthouse",
+        "description": "A lighthouse with a beam made from floating code symbols."
+      }
+    ],
+    "suggested_topic_milestones": [
+      "Variables and values",
+      "Conditions",
+      "Loops",
+      "Functions",
+      "Collections of data",
+      "Reading and fixing errors"
+    ]
+  },
+  "ai": {
+    "subject": "AI",
+    "accent_color": "#D65C9B",
+    "achievements": [
+      {
+        "hours": 1,
+        "name": "Thought Bubble",
+        "description": "A floating bubble ornament filled with tiny stars."
+      },
+      {
+        "hours": 3,
+        "name": "Data Petal",
+        "description": "A metallic flower petal etched with colorful dots."
+      },
+      {
+        "hours": 6,
+        "name": "Pattern Lantern",
+        "description": "A lantern whose moving cutouts cast shifting patterns."
+      },
+      {
+        "hours": 10,
+        "name": "Friendly Circuit",
+        "description": "A smiling circuit board plaque for the island wall."
+      },
+      {
+        "hours": 20,
+        "name": "Prompt Kite",
+        "description": "A paper kite trailing a ribbon of changing symbols."
+      },
+      {
+        "hours": 35,
+        "name": "Neural Vine",
+        "description": "A decorative vine linked by tiny glowing nodes."
+      },
+      {
+        "hours": 50,
+        "name": "Dreaming Cloud",
+        "description": "A soft pink cloud that cycles through abstract scenes."
+      },
+      {
+        "hours": 75,
+        "name": "Model Maker Apron",
+        "description": "A canvas apron with colorful patch-shaped icons for the avatar."
+      },
+      {
+        "hours": 100,
+        "name": "Synthetic Garden",
+        "description": "A garden of glowing flowers with gently changing colors."
+      },
+      {
+        "hours": 150,
+        "name": "Constellation Engine",
+        "description": "A whimsical star machine that draws new constellations overhead."
+      }
+    ],
+    "suggested_topic_milestones": [
+      "What AI systems do",
+      "Training examples and data",
+      "Patterns and predictions",
+      "Generative tools",
+      "AI limitations and uncertainty",
+      "Responsible use and privacy"
+    ]
+  },
+  "art": {
+    "subject": "Art",
+    "accent_color": "#f1a9cf",
+    "achievements": [
+      {
+        "hours": 1,
+        "name": "Charcoal Sprout",
+        "description": "A tiny charcoal pencil tucked into the island garden."
+      },
+      {
+        "hours": 3,
+        "name": "Sketchbook Kite",
+        "description": "A sketchbook kite that drifts above the island paths."
+      },
+      {
+        "hours": 6,
+        "name": "Paper Lantern Grove",
+        "description": "A cluster of paper lanterns painted with loose brush marks."
+      },
+      {
+        "hours": 10,
+        "name": "Pencil Bridge",
+        "description": "A wooden bridge edged with carved pencil shapes."
+      },
+      {
+        "hours": 20,
+        "name": "Palette Fountain",
+        "description": "A fountain ringed with bright color swatches."
+      },
+      {
+        "hours": 35,
+        "name": "Contour Lookout",
+        "description": "A lookout deck traced with flowing contour lines."
+      },
+      {
+        "hours": 50,
+        "name": "Velvet Easel",
+        "description": "A small velvet-covered easel for the island studio."
+      },
+      {
+        "hours": 75,
+        "name": "Golden Frame Pavilion",
+        "description": "A pavilion decorated with empty golden picture frames."
+      },
+      {
+        "hours": 100,
+        "name": "Moonlit Studio",
+        "description": "A quiet drawing studio lit by a crescent moon window."
+      },
+      {
+        "hours": 150,
+        "name": "Skybound Gallery",
+        "description": "A floating gallery of blank canvases beneath the stars."
+      }
+    ],
+    "suggested_topic_milestones": [
+      "Sketching everyday objects",
+      "Drawing from direct observation",
+      "Perspective in rooms and streets",
+      "Light, shadow, and reflected light",
+      "Portraits, figures, and gesture",
+      "Planning and finishing a personal drawing"
+    ]
+  }
+}

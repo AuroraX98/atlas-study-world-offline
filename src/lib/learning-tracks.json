@@ -1,0 +1,917 @@
+{
+  "topics": {
+    "math": [
+      {
+        "id": "math-whole-number-operations",
+        "stage": "Foundations",
+        "title": "Whole Number Operations",
+        "criterion": "I can use arithmetic operations and explain the order I use them in.",
+        "reward": "Numberstone Badge",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "math-fractions-and-decimals",
+        "stage": "Foundations",
+        "title": "Fractions and Decimals",
+        "criterion": "I can compare and calculate with fractions, decimals, and percentages.",
+        "reward": "Fraction Lantern",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "math-ratios-and-rates",
+        "stage": "Foundations",
+        "title": "Ratios and Rates",
+        "criterion": "I can describe a ratio and use a rate to compare quantities.",
+        "reward": "Ratio Compass",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "math-coordinates-and-graphs",
+        "stage": "Foundations",
+        "title": "Coordinates and Graphs",
+        "criterion": "I can locate points and read basic information from a graph.",
+        "reward": "Graph Garden",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "math-equations-and-inequalities",
+        "stage": "Developing",
+        "title": "Equations and Inequalities",
+        "criterion": "I can solve a simple equation or inequality and check a result.",
+        "reward": "Balance Bridge",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "math-functions-and-graphs",
+        "stage": "Developing",
+        "title": "Functions and Graphs",
+        "criterion": "I can identify inputs and outputs and connect a function rule to its graph.",
+        "reward": "Function Kite",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "math-geometry-and-measurement",
+        "stage": "Developing",
+        "title": "Geometry and Measurement",
+        "criterion": "I can use properties of shapes and units to solve a measurement problem.",
+        "reward": "Shape Observatory",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "math-data-and-probability",
+        "stage": "Developing",
+        "title": "Data and Probability",
+        "criterion": "I can summarize a small data set and describe a simple chance event.",
+        "reward": "Chance Fountain",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "math-polynomial-patterns",
+        "stage": "Advanced",
+        "title": "Polynomial Patterns",
+        "criterion": "I can factor or evaluate common polynomial expressions and interpret their graphs.",
+        "reward": "Polynomial Prism",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "math-exponential-models",
+        "stage": "Advanced",
+        "title": "Exponential Models",
+        "criterion": "I can compare linear and exponential change in a stated context.",
+        "reward": "Growth Clocktower",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "math-trigonometric-relationships",
+        "stage": "Advanced",
+        "title": "Trigonometric Relationships",
+        "criterion": "I can use a trigonometric relationship to connect angles and lengths.",
+        "reward": "Sinewave Arch",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "math-sequences-and-series",
+        "stage": "Advanced",
+        "title": "Sequences and Series",
+        "criterion": "I can describe a sequence rule and calculate terms or a finite sum.",
+        "reward": "Sequence Stairway",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "math-limits-and-continuity",
+        "stage": "Specialist topics",
+        "title": "Limits and Continuity",
+        "criterion": "I can estimate a limit from a formula, table, or graph and describe continuity.",
+        "reward": "Limit Lookout",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "math-derivatives-and-integrals",
+        "stage": "Specialist topics",
+        "title": "Derivatives and Integrals",
+        "criterion": "I can connect a derivative to rate of change and an integral to accumulated quantity.",
+        "reward": "Calculus Canopy",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "math-vectors-and-matrices",
+        "stage": "Specialist topics",
+        "title": "Vectors and Matrices",
+        "criterion": "I can represent quantities with vectors or matrices and carry out basic operations.",
+        "reward": "Vector Pavilion",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "math-proofs-and-optimization",
+        "stage": "Specialist topics",
+        "title": "Proofs and Optimization",
+        "criterion": "I can follow a short mathematical argument or formulate a simple optimization problem.",
+        "reward": "Theorem Observatory",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      }
+    ],
+    "physics": [
+      {
+        "id": "physics-units-and-measurement",
+        "stage": "Foundations",
+        "title": "Units and Measurement",
+        "criterion": "I can choose units, convert between common units, and report a measured quantity.",
+        "reward": "Unit Beacon",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "physics-vectors-and-motion",
+        "stage": "Foundations",
+        "title": "Vectors and Motion",
+        "criterion": "I can represent motion with position, velocity, and acceleration in one dimension.",
+        "reward": "Motion Kite",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "physics-forces-and-free-bodies",
+        "stage": "Foundations",
+        "title": "Forces and Free Bodies",
+        "criterion": "I can draw a force diagram and relate net force to an object's motion.",
+        "reward": "Force Cairn",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "physics-work-and-energy",
+        "stage": "Foundations",
+        "title": "Work and Energy",
+        "criterion": "I can track how work transfers energy between forms in a simple system.",
+        "reward": "Energy Lantern",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "physics-momentum-and-collisions",
+        "stage": "Developing",
+        "title": "Momentum and Collisions",
+        "criterion": "I can use momentum conservation to describe a simple collision.",
+        "reward": "Momentum Bridge",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "physics-rotation-and-torque",
+        "stage": "Developing",
+        "title": "Rotation and Torque",
+        "criterion": "I can relate torque and rotational motion in a basic physical setup.",
+        "reward": "Gyro Garden",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "physics-oscillations-and-waves",
+        "stage": "Developing",
+        "title": "Oscillations and Waves",
+        "criterion": "I can identify period, frequency, and wavelength in a simple wave.",
+        "reward": "Waveglass Arch",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "physics-heat-and-thermodynamics",
+        "stage": "Developing",
+        "title": "Heat and Thermodynamics",
+        "criterion": "I can describe heat transfer and apply energy conservation to a thermal example.",
+        "reward": "Thermal Hearth",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "physics-electric-fields-and-potential",
+        "stage": "Advanced",
+        "title": "Electric Fields and Potential",
+        "criterion": "I can distinguish electric force, field, and potential in a simple arrangement.",
+        "reward": "Charge Observatory",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "physics-circuits-and-magnetism",
+        "stage": "Advanced",
+        "title": "Circuits and Magnetism",
+        "criterion": "I can analyze a basic circuit and describe how current relates to magnetic effects.",
+        "reward": "Circuit Spire",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "physics-light-and-optics",
+        "stage": "Advanced",
+        "title": "Light and Optics",
+        "criterion": "I can use a ray diagram or wave description to explain a basic optical effect.",
+        "reward": "Prism Lookout",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "physics-relativity-and-modern-physics",
+        "stage": "Advanced",
+        "title": "Relativity and Modern Physics",
+        "criterion": "I can describe one situation where classical physics needs a modern account.",
+        "reward": "Spacetime Arch",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "physics-fluids-and-flow",
+        "stage": "Specialist topics",
+        "title": "Fluids and Flow",
+        "criterion": "I can use pressure, density, or flow rate to reason about a fluid system.",
+        "reward": "Current Fountain",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "physics-statistical-physics",
+        "stage": "Specialist topics",
+        "title": "Statistical Physics",
+        "criterion": "I can connect a microscopic description to a bulk property such as temperature.",
+        "reward": "Ensemble Garden",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "physics-quantum-models",
+        "stage": "Specialist topics",
+        "title": "Quantum Models",
+        "criterion": "I can describe what a quantum model predicts for a small-scale system.",
+        "reward": "Quantum Beacon",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "physics-computational-physics",
+        "stage": "Specialist topics",
+        "title": "Computational Physics",
+        "criterion": "I can set up a simple numerical model and compare its output with a physical expectation.",
+        "reward": "Modeling Pavilion",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      }
+    ],
+    "quantum": [
+      {
+        "id": "quantum-complex-numbers",
+        "stage": "Foundations",
+        "title": "Complex Numbers",
+        "criterion": "I can represent a complex number and explain how its magnitude differs from its phase.",
+        "reward": "Phase Pebble",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "quantum-probability-and-waves",
+        "stage": "Foundations",
+        "title": "Probability and Waves",
+        "criterion": "I can connect a wave-like description to probabilities without treating it as a tiny classical path.",
+        "reward": "Wave Lantern",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "quantum-superposition",
+        "stage": "Foundations",
+        "title": "Superposition",
+        "criterion": "I can describe a superposition as a combination of possible states in a stated example.",
+        "reward": "State Prism",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "quantum-measurement-outcomes",
+        "stage": "Foundations",
+        "title": "Measurement Outcomes",
+        "criterion": "I can distinguish a predicted distribution of outcomes from one individual measurement.",
+        "reward": "Outcome Orb",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "quantum-wavefunctions-and-probability",
+        "stage": "Developing",
+        "title": "Wavefunctions and Probability",
+        "criterion": "I can explain how a normalized wavefunction is used to calculate position probabilities.",
+        "reward": "Born Garden",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "quantum-uncertainty-relations",
+        "stage": "Developing",
+        "title": "Uncertainty Relations",
+        "criterion": "I can explain what an uncertainty relation says about paired measurable quantities.",
+        "reward": "Uncertainty Veil",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "quantum-schrodinger-equation",
+        "stage": "Developing",
+        "title": "Schrodinger Equation",
+        "criterion": "I can describe how the Schrodinger equation relates a system's state to its energy and evolution.",
+        "reward": "Schrodinger Spire",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "quantum-bound-states-and-tunneling",
+        "stage": "Developing",
+        "title": "Bound States and Tunneling",
+        "criterion": "I can interpret quantized bound states and describe tunneling through a simple barrier.",
+        "reward": "Tunneling Gate",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "quantum-spin-and-angular-momentum",
+        "stage": "Advanced",
+        "title": "Spin and Angular Momentum",
+        "criterion": "I can distinguish intrinsic spin from orbital angular momentum in a basic model.",
+        "reward": "Spin Compass",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "quantum-hydrogen-and-orbitals",
+        "stage": "Advanced",
+        "title": "Hydrogen and Orbitals",
+        "criterion": "I can relate hydrogen energy levels and quantum numbers to orbital descriptions.",
+        "reward": "Orbital Observatory",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "quantum-identical-particles",
+        "stage": "Advanced",
+        "title": "Identical Particles",
+        "criterion": "I can explain how particle identity and the exclusion principle affect allowed states.",
+        "reward": "Pauli Pavilion",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "quantum-approximation-methods",
+        "stage": "Advanced",
+        "title": "Approximation Methods",
+        "criterion": "I can describe why approximation methods are useful when an exact solution is unavailable.",
+        "reward": "Perturbation Garden",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "quantum-density-matrices",
+        "stage": "Specialist topics",
+        "title": "Density Matrices",
+        "criterion": "I can explain what a density matrix represents for a quantum state or mixture.",
+        "reward": "Matrix Mirror",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "quantum-entanglement-and-correlations",
+        "stage": "Specialist topics",
+        "title": "Entanglement and Correlations",
+        "criterion": "I can identify correlations in a joint state that cannot be explained as independent parts.",
+        "reward": "Entangled Globes",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "quantum-decoherence-and-noise",
+        "stage": "Specialist topics",
+        "title": "Decoherence and Noise",
+        "criterion": "I can describe how interactions with an environment can affect observable quantum coherence.",
+        "reward": "Decoherence Canopy",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "quantum-quantum-information",
+        "stage": "Specialist topics",
+        "title": "Quantum Information",
+        "criterion": "I can explain how a quantum circuit uses states, gates, and measurements to process information.",
+        "reward": "Qubit Skybridge",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      }
+    ],
+    "coding": [
+      {
+        "id": "coding-values-and-expressions",
+        "stage": "Foundations",
+        "title": "Values and Expressions",
+        "criterion": "I can assign values and combine them in expressions that produce a stated result.",
+        "reward": "Variable Sprout",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "coding-input-and-output",
+        "stage": "Foundations",
+        "title": "Input and Output",
+        "criterion": "I can write a short program that accepts input and displays a useful result.",
+        "reward": "Output Lantern",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "coding-conditions",
+        "stage": "Foundations",
+        "title": "Conditions",
+        "criterion": "I can use a condition to make a program choose between paths.",
+        "reward": "Branching Bridge",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "coding-loops",
+        "stage": "Foundations",
+        "title": "Loops",
+        "criterion": "I can use a loop to repeat work and explain when it stops.",
+        "reward": "Looping Gear",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "coding-functions-and-parameters",
+        "stage": "Developing",
+        "title": "Functions and Parameters",
+        "criterion": "I can define and call a function with parameters and a return value.",
+        "reward": "Function Forge",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "coding-collections",
+        "stage": "Developing",
+        "title": "Collections",
+        "criterion": "I can store and retrieve related values with an appropriate collection.",
+        "reward": "Data Basket",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "coding-files-and-errors",
+        "stage": "Developing",
+        "title": "Files and Errors",
+        "criterion": "I can read or write a file and handle a common error without losing control of the program.",
+        "reward": "Error Lighthouse",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "coding-modules-and-packages",
+        "stage": "Developing",
+        "title": "Modules and Packages",
+        "criterion": "I can organize code into a module and use a documented library feature.",
+        "reward": "Module Garden",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "coding-algorithms-and-complexity",
+        "stage": "Advanced",
+        "title": "Algorithms and Complexity",
+        "criterion": "I can compare two approaches and describe how their work changes as input grows.",
+        "reward": "Algorithm Orrery",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "coding-data-structures",
+        "stage": "Advanced",
+        "title": "Data Structures",
+        "criterion": "I can choose a data structure that fits a stated operation and explain the tradeoff.",
+        "reward": "Structure Spire",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "coding-testing-and-debugging",
+        "stage": "Advanced",
+        "title": "Testing and Debugging",
+        "criterion": "I can reproduce a bug, isolate its cause, and use a test to check a fix.",
+        "reward": "Debugging Beacon",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "coding-object-oriented-design",
+        "stage": "Advanced",
+        "title": "Object-Oriented Design",
+        "criterion": "I can model related data and behavior with a small, coherent set of objects.",
+        "reward": "Object Pavilion",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "coding-recursion-and-invariants",
+        "stage": "Specialist topics",
+        "title": "Recursion and Invariants",
+        "criterion": "I can trace a recursive function and state what stays true during its steps.",
+        "reward": "Recursive Stairway",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "coding-concurrency-and-events",
+        "stage": "Specialist topics",
+        "title": "Concurrency and Events",
+        "criterion": "I can describe how concurrent tasks or events affect a program's flow.",
+        "reward": "Event Weathervane",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "coding-databases-and-persistence",
+        "stage": "Specialist topics",
+        "title": "Databases and Persistence",
+        "criterion": "I can store structured data and retrieve it with a clear query or interface.",
+        "reward": "Database Reservoir",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "coding-architecture-and-interfaces",
+        "stage": "Specialist topics",
+        "title": "Architecture and Interfaces",
+        "criterion": "I can separate a program into parts with clear responsibilities and interfaces.",
+        "reward": "Software Skybridge",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      }
+    ],
+    "ai": [
+      {
+        "id": "ai-ai-systems-and-tasks",
+        "stage": "Foundations",
+        "title": "AI Systems and Tasks",
+        "criterion": "I can describe an AI task in terms of inputs, outputs, and a useful goal.",
+        "reward": "Task Compass",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "ai-search-and-state-spaces",
+        "stage": "Foundations",
+        "title": "Search and State Spaces",
+        "criterion": "I can represent a small search problem as states, actions, and a goal test.",
+        "reward": "Search Lantern",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "ai-data-and-features",
+        "stage": "Foundations",
+        "title": "Data and Features",
+        "criterion": "I can identify examples, labels, and features in a simple learning task.",
+        "reward": "Feature Garden",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "ai-rules-and-logic",
+        "stage": "Foundations",
+        "title": "Rules and Logic",
+        "criterion": "I can represent a small set of facts or rules and trace a conclusion they support.",
+        "reward": "Logic Bridge",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "ai-classification-and-regression",
+        "stage": "Developing",
+        "title": "Classification and Regression",
+        "criterion": "I can distinguish predicting a category from predicting a numeric value.",
+        "reward": "Prediction Prism",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "ai-training-and-evaluation",
+        "stage": "Developing",
+        "title": "Training and Evaluation",
+        "criterion": "I can explain why training and evaluation data should be kept distinct.",
+        "reward": "Evaluation Beacon",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "ai-decision-trees-and-neighbors",
+        "stage": "Developing",
+        "title": "Decision Trees and Neighbors",
+        "criterion": "I can trace a simple decision tree or nearest-neighbor prediction from examples.",
+        "reward": "Decision Grove",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "ai-probability-and-uncertainty",
+        "stage": "Developing",
+        "title": "Probability and Uncertainty",
+        "criterion": "I can explain how a probabilistic model expresses uncertainty in its output.",
+        "reward": "Bayes Observatory",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "ai-neural-network-basics",
+        "stage": "Advanced",
+        "title": "Neural Network Basics",
+        "criterion": "I can describe how layers and adjusted weights contribute to a neural network output.",
+        "reward": "Neuron Canopy",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "ai-language-models",
+        "stage": "Advanced",
+        "title": "Language Models",
+        "criterion": "I can describe at a high level how a language model generates text from context.",
+        "reward": "Token Fountain",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "ai-reinforcement-learning",
+        "stage": "Advanced",
+        "title": "Reinforcement Learning",
+        "criterion": "I can identify an agent, actions, rewards, and environment in a learning setup.",
+        "reward": "Reward River",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "ai-generative-ai",
+        "stage": "Advanced",
+        "title": "Generative AI",
+        "criterion": "I can compare generated outputs and name a limitation that affects their reliability.",
+        "reward": "Generative Garden",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "ai-model-robustness",
+        "stage": "Specialist topics",
+        "title": "Model Robustness",
+        "criterion": "I can describe how a changed input or data shift might affect a model's behavior.",
+        "reward": "Robustness Lighthouse",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "ai-fairness-and-bias",
+        "stage": "Specialist topics",
+        "title": "Fairness and Bias",
+        "criterion": "I can identify a possible source of bias and explain who may be affected by it.",
+        "reward": "Fairness Canopy",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "ai-privacy-and-safety",
+        "stage": "Specialist topics",
+        "title": "Privacy and Safety",
+        "criterion": "I can identify a privacy or safety concern in an AI use case and suggest a safeguard.",
+        "reward": "Privacy Pavilion",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      },
+      {
+        "id": "ai-ai-system-evaluation",
+        "stage": "Specialist topics",
+        "title": "AI System Evaluation",
+        "criterion": "I can propose an evaluation that considers performance, limitations, and real-world effects.",
+        "reward": "Impact Observatory",
+        "assessment_note": "Self-assessment only; this is not certified proficiency."
+      }
+    ],
+    "art": [
+      {
+        "id": "art-line-control",
+        "stage": "Foundations",
+        "title": "Line Control",
+        "criterion": "I can vary line direction and pressure to make deliberate marks.",
+        "reward": "Confident Stroke"
+      },
+      {
+        "id": "art-observational-sketching",
+        "stage": "Foundations",
+        "title": "Observational Sketching",
+        "criterion": "I can compare a sketch with a reference and point out a visible difference.",
+        "reward": "Keen Observer"
+      },
+      {
+        "id": "art-simple-shapes",
+        "stage": "Foundations",
+        "title": "Simple Shapes",
+        "criterion": "I can reduce a familiar object to a few simple shapes.",
+        "reward": "Shape Collector"
+      },
+      {
+        "id": "art-basic-proportion",
+        "stage": "Foundations",
+        "title": "Basic Proportion",
+        "criterion": "I can compare the relative size and placement of parts in a simple subject.",
+        "reward": "Proportion Pebble"
+      },
+      {
+        "id": "art-perspective-basics",
+        "stage": "Developing",
+        "title": "Perspective Basics",
+        "criterion": "I can use a horizon and vanishing point to suggest depth in a simple scene.",
+        "reward": "Vanishing Kite"
+      },
+      {
+        "id": "art-light-and-shadow",
+        "stage": "Developing",
+        "title": "Light and Shadow",
+        "criterion": "I can identify a light source and place a cast shadow consistent with it.",
+        "reward": "Shadow Lantern"
+      },
+      {
+        "id": "art-form-in-space",
+        "stage": "Developing",
+        "title": "Form in Space",
+        "criterion": "I can use overlap and shading to make a basic form appear three-dimensional.",
+        "reward": "Form Foundry"
+      },
+      {
+        "id": "art-texture-studies",
+        "stage": "Developing",
+        "title": "Texture Studies",
+        "criterion": "I can use a few distinct marks to suggest different surface textures.",
+        "reward": "Texture Garden"
+      },
+      {
+        "id": "art-gesture-and-rhythm",
+        "stage": "Advanced",
+        "title": "Gesture and Rhythm",
+        "criterion": "I can sketch a pose or moving subject with a few lines that show its overall action.",
+        "reward": "Gesture Ribbon"
+      },
+      {
+        "id": "art-figure-anatomy",
+        "stage": "Advanced",
+        "title": "Figure Anatomy",
+        "criterion": "I can use simple underlying forms to place major parts of a figure.",
+        "reward": "Figure Compass"
+      },
+      {
+        "id": "art-composition-and-focus",
+        "stage": "Advanced",
+        "title": "Composition and Focus",
+        "criterion": "I can arrange shapes and values to guide attention toward a chosen area.",
+        "reward": "Focus Pavilion"
+      },
+      {
+        "id": "art-portrait-structure",
+        "stage": "Advanced",
+        "title": "Portrait Structure",
+        "criterion": "I can map the major features of a face in relation to its overall shape.",
+        "reward": "Portrait Window"
+      },
+      {
+        "id": "art-complex-scene-planning",
+        "stage": "Specialist topics",
+        "title": "Complex Scene Planning",
+        "criterion": "I can thumbnail a scene and organize its foreground, middle ground, and background.",
+        "reward": "Scene Architect"
+      },
+      {
+        "id": "art-materials-and-surface",
+        "stage": "Specialist topics",
+        "title": "Materials and Surface",
+        "criterion": "I can adjust marks and edges to suggest more than one material in a drawing.",
+        "reward": "Material Mosaic"
+      },
+      {
+        "id": "art-color-and-atmosphere",
+        "stage": "Specialist topics",
+        "title": "Color and Atmosphere",
+        "criterion": "I can use a limited color range to support the mood and depth of a scene.",
+        "reward": "Atmosphere Prism"
+      },
+      {
+        "id": "art-finished-drawing-project",
+        "stage": "Specialist topics",
+        "title": "Finished Drawing Project",
+        "criterion": "I can plan, develop, and finish a drawing while explaining the choices I made.",
+        "reward": "Finished Work Beacon"
+      }
+    ]
+  },
+  "vocabulary": {
+    "spanish": [
+      {
+        "count": 10,
+        "name": "Hola Sprout"
+      },
+      {
+        "count": 50,
+        "name": "Verb Kite"
+      },
+      {
+        "count": 100,
+        "name": "Cognate Compass"
+      },
+      {
+        "count": 250,
+        "name": "Phrase Garden"
+      },
+      {
+        "count": 500,
+        "name": "Tense Lantern"
+      },
+      {
+        "count": 1000,
+        "name": "Fluency Bridge"
+      },
+      {
+        "count": 2000,
+        "name": "Story Pavilion"
+      },
+      {
+        "count": 5000,
+        "name": "Lexicon Orrery"
+      },
+      {
+        "count": 10000,
+        "name": "Wordworld Crown"
+      }
+    ],
+    "german": [
+      {
+        "count": 10,
+        "name": "Hallo Sprout"
+      },
+      {
+        "count": 50,
+        "name": "Article Compass"
+      },
+      {
+        "count": 100,
+        "name": "Compound Clock"
+      },
+      {
+        "count": 250,
+        "name": "Redewendung Garden"
+      },
+      {
+        "count": 500,
+        "name": "Case Lantern"
+      },
+      {
+        "count": 1000,
+        "name": "Verb Bridge"
+      },
+      {
+        "count": 2000,
+        "name": "Narrative Pavilion"
+      },
+      {
+        "count": 5000,
+        "name": "Wortschatz Orrery"
+      },
+      {
+        "count": 10000,
+        "name": "Wortwelt Crown"
+      }
+    ],
+    "latin": [
+      {
+        "count": 10,
+        "name": "Salve Sprout"
+      },
+      {
+        "count": 50,
+        "name": "Nominative Compass"
+      },
+      {
+        "count": 100,
+        "name": "Case Column"
+      },
+      {
+        "count": 250,
+        "name": "Sententia Garden"
+      },
+      {
+        "count": 500,
+        "name": "Verb Lantern"
+      },
+      {
+        "count": 1000,
+        "name": "Syntax Bridge"
+      },
+      {
+        "count": 2000,
+        "name": "Fable Atrium"
+      },
+      {
+        "count": 5000,
+        "name": "Verborum Orrery"
+      },
+      {
+        "count": 10000,
+        "name": "Verbum Crown"
+      }
+    ]
+  },
+  "sources": {
+    "math": [
+      "https://openstax.org/books/college-algebra-2e/pages/preface",
+      "https://openstax.org/books/college-algebra-2e/pages/3-key-concepts",
+      "https://openstax.org/books/college-algebra-2e/pages/9-key-equations",
+      "https://openstax.org/books/calculus-volume-1/pages/preface",
+      "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/"
+    ],
+    "physics": [
+      "https://openstax.org/books/university-physics-volume-2/pages/preface",
+      "https://openstax.org/books/university-physics-volume-3/pages/7-introduction"
+    ],
+    "quantum": [
+      "https://openstax.org/books/university-physics-volume-3/pages/7-introduction",
+      "https://openstax.org/books/university-physics-volume-3/pages/8-introduction",
+      "https://quantum.cloud.ibm.com/learning/en/courses"
+    ],
+    "coding": [
+      "https://docs.python.org/3/tutorial/index.html",
+      "https://docs.python.org/3/tutorial/controlflow.html",
+      "https://docs.python.org/3/tutorial/datastructures.html",
+      "https://docs.python.org/3/tutorial/errors.html"
+    ],
+    "ai": [
+      "https://ocw.mit.edu/courses/6-034-artificial-intelligence-spring-2005/pages/syllabus/",
+      "https://ocw.mit.edu/courses/6-036-introduction-to-machine-learning-fall-2020/",
+      "https://ocw.mit.edu/courses/res-tll-008-social-and-ethical-responsibilities-of-computing-serc/pages/ai-algorithms/"
+    ],
+    "art": [
+      "https://www.proko.com/course/drawing-basics",
+      "https://www.proko.com/course-lesson/improve-your-drawings-with-values"
+    ]
+  }
+}

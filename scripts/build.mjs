@@ -1,0 +1,9 @@
+import {build} from 'esbuild';
+import postcss from 'postcss';
+import tailwind from '@tailwindcss/postcss';
+import {readFile,mkdir,writeFile} from 'node:fs/promises';
+const result=await build({entryPoints:['src/main.tsx'],bundle:true,write:false,minify:true,format:'iife',platform:'browser',target:['chrome110','edge110','firefox115','safari17'],jsx:'automatic',alias:{'@':'./src'},define:{'process.env.NODE_ENV':'"production"'},legalComments:'eof'});
+const css=await postcss([tailwind()]).process(await readFile('src/style.css','utf8'),{from:'src/style.css'});
+const js=result.outputFiles[0].text.replace(/<\/script/gi,'<\\/script');
+const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Atlas Study World Offline: local study tracker, Pomodoro timer, goals, weekly progress, 3D islands and language vocabulary achievements. No login. macOS and Windows."><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; connect-src 'none'; media-src blob:; object-src 'none'; base-uri 'none'; form-action 'none';"><title>Atlas Study World Offline · Study Tracker &amp; Pomodoro Timer</title><style>${css.css.replace(/<\/style/gi,'<\\/style')}</style></head><body><div id="root"></div><noscript>Enable JavaScript in this browser to use Atlas. All progress stays on this computer.</noscript><script>${js}</script></body></html>`;
+await mkdir('dist',{recursive:true});await writeFile('dist/atlas-study-world.html',html);console.log(`Built standalone offline HTML: ${(Buffer.byteLength(html)/1048576).toFixed(2)} MB. All JavaScript and CSS included.`);
