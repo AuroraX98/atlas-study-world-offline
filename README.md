@@ -1,8 +1,10 @@
-# Atlas Study World Offline — Study Tracker, Pomodoro Timer & Goal Planner
+# Atlas Study World — Offline Study Tracker, Study Planner & Pomodoro Timer
 
 **Current public preview: v1.1.0-preview.1.** The latest app includes built-in lessons and optional AI assistance. See [verification and remaining platform checks](VERIFICATION.md).
 
-**Download one HTML file and build your study world offline.** Atlas combines a 3D study tracker, Pomodoro timer, goal planner, weekly progress reports, and a personal study journal. It is designed for desktop browsers on **macOS and Windows**, with automatic local saving and no login or subscription.
+**An offline study tracker and study planner for macOS and Windows.** Download one HTML file to track study time with a Pomodoro timer, organize short-term and long-term goals, review weekly progress, and keep a personal study journal. Automatic local saving and 3D achievement islands help you see your progress, with no login required.
+
+Support your **language learning** with a vocabulary tracker for 50 languages and reachable word-count milestones through 50,000 words. Explore 96 built-in lessons in Math, Physics, Quantum Physics, Coding, AI, and Art. An optional **AI study assistant** can generate personalized lessons with DeepSeek, OpenAI, or Claude; it requires internet access and your own API account.
 
 [**Download Atlas HTML**](https://github.com/AuroraX98/atlas-study-world-offline/releases/download/v1.1.0-preview.1/atlas-study-world.html) · [**Download app + companion ZIP**](https://github.com/AuroraX98/atlas-study-world-offline/releases/download/v1.1.0-preview.1/Atlas-Study-World.zip) · [Current preview release](https://github.com/AuroraX98/atlas-study-world-offline/releases/tag/v1.1.0-preview.1) · [Quick start](QUICK-START.md)
 
