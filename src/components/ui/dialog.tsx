@@ -51,10 +51,14 @@ function DialogContent({
   className,
   children,
   showCloseButton = true,
+  onOpenAutoFocus,
+  onCloseAutoFocus,
   ...props
 }: React.ComponentProps<typeof DialogPrimitive.Content> & {
   showCloseButton?: boolean
 }) {
+  const opener = React.useRef<HTMLElement | null>(null)
+  const openingHash = React.useRef('')
   return (
     <DialogPortal data-slot="dialog-portal">
       <DialogOverlay />
@@ -65,6 +69,17 @@ function DialogContent({
           className
         )}
         {...props}
+        onOpenAutoFocus={event => {
+          opener.current = document.activeElement instanceof HTMLElement ? document.activeElement : null
+          openingHash.current = window.location.hash
+          onOpenAutoFocus?.(event)
+        }}
+        onCloseAutoFocus={event => {
+          onCloseAutoFocus?.(event)
+          if (event.defaultPrevented) return
+          const target = openingHash.current === window.location.hash && opener.current?.isConnected && opener.current.getClientRects().length ? opener.current : document.querySelector<HTMLElement>('#atlas-main-content h1') ?? document.getElementById('atlas-main-content')
+          if (target) { if (target !== opener.current) target.setAttribute('tabindex', '-1'); target.focus({preventScroll:true}); event.preventDefault() }
+        }}
       >
         {children}
         {showCloseButton && (

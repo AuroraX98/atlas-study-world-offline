@@ -1,5 +1,15 @@
 # Changes
 
+## v1.1.0-preview.3 — 3 October 2026
+
+- Completed a 100-check navigation review with evidence and remaining checks in NAVIGATION-REVIEW.md.
+- Protected unfinished Assistant setup, answers, word counts, practice forms and per-horizon goal text across navigation and reload, preserving newer edits during saves.
+- Added complete search results, clear counts/order, exact-title ranking, practical aliases/typo tolerance, Settings/Backups shortcuts and keyboard-accessible pinning.
+- Added skip navigation, destination focus, modal return focus, content landmarks, dynamic page titles, consistent labels and programmatic selected states.
+- Kept focused controls clear of the sticky timer and corrected weekly completed-goal totals.
+
+All eight main pages and affected journeys were checked in an isolated macOS browser database. Windows, direct file opening, screen-reader behavior and representative-user testing remain manual checks.
+
 ## v1.1.0-preview.2 — 3 October 2026
 
 - Renamed Quests and Collection to Goals and Rewards; separated weekly progress and study history from Journal.

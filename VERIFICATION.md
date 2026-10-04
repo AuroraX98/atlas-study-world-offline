@@ -2,6 +2,14 @@
 
 Verified on 3 October 2026, using macOS and the Codex in-app browser. This is a review build, not a claim that every operating system, browser, or possible input has been tested.
 
+## Navigation review fixes — v1.1.0-preview.3
+
+The full [navigation review](NAVIGATION-REVIEW.md) records all 100 checks: 78 Pass, 0 Needs work, 3 Not applicable and 19 Not verified, each limited to its stated evidence. This is coverage, not a usability score or accessibility certification.
+
+On 3 October 2026, an isolated database at 5181 verified all eight main pages, titles and content headings at desktop and requested 375×812 viewport with no horizontal page overflow. Assistant setup, practice and goal-horizon drafts survived navigation/reload. Practice/goal saves and journal immediate navigation worked. Search expanded all 111 sample results, handled a Physics typo, pinned and reopened an exact journal entry, and opened Backups through keyboard search. Skip navigation, dialog return, route heading focus and a narrow-screen action above the sticky timer were checked. A paused/ended timer credited 10 seconds; both weekly summaries counted the completed horizon goal. No browser console errors appeared.
+
+Type checking, standalone build and the full automated suite passed, including bounded local drafts, late-save newer-text preservation, search ranking/paging and all earlier timer/storage/backup/lesson/export checks. Live AI requests were not needed for this navigation review; earlier real DeepSeek verification is retained below. Screen-reader, physical-device, translated-interface, large-history, direct-file and Windows checks remain explicit in the review.
+
 ## Navigation update — v1.1.0-preview.2
 
 Checked on 3 October 2026 in an isolated browser database at port 5180. Existing personal progress at 5175 was not used for these tests.

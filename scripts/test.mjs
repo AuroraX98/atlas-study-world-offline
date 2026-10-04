@@ -12,3 +12,12 @@ await import('../.test-build/navigation-search.test.mjs');
 
 await build({entryPoints:['tests/navigation.test.ts'],bundle:true,platform:'node',format:'esm',outfile:'.test-build/navigation.test.mjs',packages:'external',jsx:'automatic',alias:{'@':'./src'}});
 await import('../.test-build/navigation.test.mjs');
+
+await build({entryPoints:['tests/gallery-draft.test.ts'],bundle:true,platform:'node',format:'esm',outfile:'.test-build/gallery-draft.test.mjs',packages:'external',jsx:'automatic',alias:{'@':'./src'}});
+await import('../.test-build/gallery-draft.test.mjs');
+
+await build({entryPoints:['tests/assistant-drafts.test.ts'],bundle:true,platform:'node',format:'esm',outfile:'.test-build/assistant-drafts.test.mjs',packages:'external',jsx:'automatic',alias:{'@':'./src'}});
+await import('../.test-build/assistant-drafts.test.mjs');
+
+await build({entryPoints:['tests/horizon-goal-draft.test.ts'],bundle:true,platform:'node',format:'esm',outfile:'.test-build/horizon-goal-draft.test.mjs',packages:'external',jsx:'automatic',alias:{'@':'./src'}});
+await import('../.test-build/horizon-goal-draft.test.mjs');

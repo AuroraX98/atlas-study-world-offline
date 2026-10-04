@@ -1,12 +1,12 @@
 # Atlas Study World — Offline Study Tracker, Study Planner & Pomodoro Timer
 
-**Current public preview: v1.1.0-preview.2.** The latest app includes built-in lessons and optional AI assistance. See [verification and remaining platform checks](VERIFICATION.md).
+**Current public preview: v1.1.0-preview.3.** The latest app includes built-in lessons and optional AI assistance. See [verification and remaining platform checks](VERIFICATION.md) and the [100-check navigation review](NAVIGATION-REVIEW.md).
 
 **An offline study tracker and study planner for macOS and Windows.** Download one HTML file to track study time with a Pomodoro timer, organize short-term and long-term goals, review weekly progress, and keep a personal study journal. Automatic local saving and 3D achievement islands help you see your progress, with no login required.
 
 Support your **language learning** with a vocabulary tracker for 50 languages and reachable word-count milestones through 50,000 words. Explore 96 built-in lessons in Math, Physics, Quantum Physics, Coding, AI, and Art. An optional **AI study assistant** can generate personalized lessons with DeepSeek, OpenAI, or Claude; it requires internet access and your own API account.
 
-[**Download Atlas HTML**](https://github.com/AuroraX98/atlas-study-world-offline/releases/download/v1.1.0-preview.2/atlas-study-world.html) · [**Download app + companion ZIP**](https://github.com/AuroraX98/atlas-study-world-offline/releases/download/v1.1.0-preview.2/Atlas-Study-World.zip) · [Current preview release](https://github.com/AuroraX98/atlas-study-world-offline/releases/tag/v1.1.0-preview.2) · [Quick start](QUICK-START.md)
+[**Download Atlas HTML**](https://github.com/AuroraX98/atlas-study-world-offline/releases/download/v1.1.0-preview.3/atlas-study-world.html) · [**Download app + companion ZIP**](https://github.com/AuroraX98/atlas-study-world-offline/releases/download/v1.1.0-preview.3/Atlas-Study-World.zip) · [Current preview release](https://github.com/AuroraX98/atlas-study-world-offline/releases/tag/v1.1.0-preview.3) · [Quick start](QUICK-START.md)
 
 ## Find your way around
 
@@ -19,7 +19,7 @@ Use **Search** (Cmd+K on Mac, Ctrl+K on Windows) to open a specific topic, goal,
 
 **Settings** has Study preferences, AI assistant, and Data & backups. **Backups** opens that data section directly. AI forms show outstanding requirements with links to the relevant fields. Expand Help finding your way or the local help beside a form for short explanations.
 
-Navigation, recent items, pins, and local writing drafts are browser convenience settings separate from the progress database. Pins retain titles and location IDs; they do not store note bodies or API keys. Progress backups include saved records, not these convenience settings. Finish saving weekly reflections and completed practice to include them in reports and backups. A failed save keeps the current journal draft and prevents leaving that editor.
+Navigation, recent items, pins, and local writing drafts are browser convenience settings separate from the progress database. Pins retain titles and location IDs; they do not store note bodies or API keys. Progress backups include saved records, not these convenience settings. Finish saving weekly reflections, completed practice and goal drafts to include them in reports and backups. Assistant setup, unsent answers and word-count drafts remain in this browser until submitted; copy unfinished text before moving computers. A failed save keeps the current journal draft and prevents leaving that editor.
 
 ## Start studying
 

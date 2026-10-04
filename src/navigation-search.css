@@ -14,3 +14,8 @@
 .search-result-title small { display: block; }
 .search-place-tabs { margin-bottom: .5rem; }
 @media (max-width: 650px) { .saved-place-list { grid-template-columns: 1fr; } .saved-places .section-title { align-items: flex-start; flex-direction: column; gap: .65rem; } }
+
+.search-result-summary { display:flex; flex-wrap:wrap; justify-content:space-between; gap:.5rem; padding:.7rem; color:#aab9cc; font-size:.8rem; border-bottom:1px solid #34465c; }
+.search-result-summary span { overflow-wrap:anywhere; }
+.search-pin-action { flex-wrap:wrap; text-align:left; }
+.search-pin-action span { flex-basis:100%; color:#aab9cc; font-size:.8rem; overflow-wrap:anywhere; }

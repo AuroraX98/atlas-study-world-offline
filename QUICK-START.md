@@ -4,7 +4,7 @@ Atlas is an offline study tracker with a Pomodoro timer, 3D islands, learning ac
 
 ## Open the app
 
-1. Download `atlas-study-world.html` from [the current preview release](https://github.com/AuroraX98/atlas-study-world-offline/releases/tag/v1.1.0-preview.2).
+1. Download `atlas-study-world.html` from [the current preview release](https://github.com/AuroraX98/atlas-study-world-offline/releases/tag/v1.1.0-preview.3).
 2. Keep it in a permanent folder and open it in Chrome or Edge in a normal browser window.
 3. Choose a subject or language, add a goal, and start a focus session. Core tracking and built-in lessons work offline.
 

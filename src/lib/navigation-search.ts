@@ -8,7 +8,7 @@ export type SavedPlacesState={recent:SavedPlace[];pinned:SavedPlace[]};
 export const savedPlacesKey='atlas-saved-places-v1';
 export const savedPlacesEvent='atlas-saved-places-changed';
 const validTabs=new Set(['world','today','subjects','focus','goals','rewards','journal','progress','assistant','settings','learning','history']);
-const validViews=new Set(['overview','learning','vocabulary','notes','practice','rewards','plan','reviews','gallery','weekly','activity','all','time','earned']);
+const validViews=new Set(['overview','learning','vocabulary','notes','practice','rewards','plan','reviews','gallery','weekly','activity','all','time','earned','study','ai','data']);
 const validKinds=new Set(['goal','journal','practice','file','badge','session','weekly','horizon','lesson']);
 const text=(value:unknown,max:number)=>typeof value==='string'&&value.length>0&&value.length<=max&&!/[\u0000-\u001f]/.test(value);
 export function validatePlaceTarget(value:unknown):NavigationTarget|null{
@@ -60,12 +60,49 @@ export function studySearchEntries(data:Snapshot):SearchEntry[]{
   ...data.workspace.journal.map(e=>({id:'journal-'+e.id,title:e.title||`Journal entry · ${e.date}`,kind:'Journal',text:`${e.date} ${e.title} ${e.events} ${e.challenges} ${e.lessons} ${e.goals} ${e.vision}`,tab:'journal',target:{tab:'journal',recordKind:'journal',recordId:e.id}})),
   ...data.sessions.filter(s=>s.note).map(s=>({id:'session-'+s.id,title:`${names.get(s.subject)??'Study'} session reflection`,kind:'Session reflection',subject:s.subject,text:s.note,tab:'progress',view:'activity',target:{tab:'progress',view:'activity',subject:s.subject,recordKind:'session',recordId:s.id}})),
   ...data.workspace.reflections.map(r=>({id:'weekly-'+r.week,title:`Weekly reflection · ${r.week}`,kind:'Reflection',text:`${r.helped} ${r.difficult} ${r.next}`,tab:'progress',view:'weekly',target:{tab:'progress',view:'weekly',recordKind:'weekly',recordId:r.week}})),
-  ...[['today','Today','Daily plan and review queue'],['subjects','Subjects','Learning paths, vocabulary, topics and study notes'],['goals','Goals','Short and long term plans'],['rewards','Rewards','Achievements and island customization'],['journal','Journal','Write and export personal entries'],['progress','Progress','Weekly reports and study history'],['assistant','Assistant','Build an AI lesson']].map(([tab,title,text])=>({id:'page-'+tab,title,kind:'Page',text,tab,target:{tab}}))
+  ...[['today','Today','Daily plan and review queue'],['world','Study world','Focus timer Pomodoro islands sessions'],['subjects','Subjects','Learning paths, vocabulary, topics and study notes'],['goals','Goals','Short and long term plans'],['rewards','Rewards','Achievements and island customization'],['journal','Journal','Write and export personal entries'],['progress','Progress','Weekly reports and study history'],['assistant','Assistant','Build an AI lesson']].map(([tab,title,text])=>({id:'page-'+tab,title,kind:'Page',text,tab,target:{tab}})),
+  ...[['study','Settings','Study preferences timer duration sound motion'],['ai','AI settings','Assistant provider API key DeepSeek Claude ChatGPT OpenAI model'],['data','Backups','Data backup export restore local files']].map(([view,title,text])=>({id:'settings-'+view,title,kind:'Settings',text,tab:'settings',target:{tab:'settings',view}}))
  ];
- return entries.map(e=>({...e,searchText:`${e.title} ${e.text} ${e.subject?names.get(e.subject)??'':''}`.toLowerCase()}));
+ return entries.map(e=>({...e,searchText:`${e.title} ${e.kind} ${e.text} ${e.subject?names.get(e.subject)??'':''}`.toLowerCase()}));
 }
 export function availableSavedPlaces(saved:SavedPlacesState,data:Snapshot):SavedPlacesState{
  const entries=studySearchEntries(data),known=new Set(entries.map(e=>placeId(e.target)));
  const exists=(place:SavedPlace)=>place.target.recordId||place.target.topicId?known.has(place.id):!place.target.subject||subjects.some(s=>s.id===place.target.subject)||data.customSubjects.some(s=>s.id===place.target.subject);
  return {recent:saved.recent.filter(exists),pinned:saved.pinned.filter(exists)};
+}
+
+/** Search ordinary terms without altering the original labels or stored records. */
+const aliases:Record<string,string>={maths:'math',mathematics:'math',vocab:'vocabulary',achievements:'rewards',achievement:'reward',badges:'rewards',badge:'reward',pomodoro:'timer',journaling:'journal',backup:'backups',settings:'settings',configuration:'settings'};
+export function normalizedSearch(text:string){return text.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim()}
+function canonical(text:string){return normalizedSearch(text).split(' ').map(word=>aliases[word]??word).join(' ')}
+function oneEditApart(a:string,b:string){
+ if(Math.abs(a.length-b.length)>1)return false;
+ if(a===b)return true;
+ if(a.length===b.length){const different=[...a].flatMap((letter,index)=>letter!==b[index]?[index]:[]);if(different.length===2&&different[1]===different[0]+1&&a[different[0]]===b[different[1]]&&a[different[1]]===b[different[0]])return true}
+ let left=0,right=0,edits=0;
+ while(left<a.length&&right<b.length){if(a[left]===b[right]){left++;right++;continue}if(++edits>1)return false;if(a.length>=b.length)left++;if(b.length>=a.length)right++}
+ return edits+(left<a.length||right<b.length?1:0)<=1;
+}
+type Searchable={title:string;kind:string;searchText?:string};
+export function rankSearchEntries<T extends Searchable>(entries:T[],query:string):T[]{
+ const raw=normalizedSearch(query),needle=canonical(query),tokens=needle.split(' ').filter(Boolean);
+ const scored=entries.flatMap((entry,index)=>{
+  const title=canonical(entry.title),body=canonical(entry.searchText??`${entry.title} ${entry.kind}`),words=body.split(' '),titleWords=title.split(' ');
+  if(!needle)return [{entry,index,score:entry.kind==='Page'||entry.kind==='Settings'?0:10}];
+  const exactTitle=normalizedSearch(entry.title)===raw;
+  if(exactTitle)return [{entry,index,score:0}];
+  if(title===needle)return [{entry,index,score:1}];
+  if(title.startsWith(needle))return [{entry,index,score:2}];
+  if(title.includes(needle))return [{entry,index,score:3}];
+  if(tokens.every(token=>titleWords.some(word=>word.startsWith(token))))return [{entry,index,score:4}];
+  if(body.includes(needle))return [{entry,index,score:5}];
+  if(tokens.every(token=>words.some(word=>word.startsWith(token))))return [{entry,index,score:6}];
+  if(tokens.every(token=>words.some(word=>word.startsWith(token)||token.length>=5&&word.length>=4&&oneEditApart(token,word))))return [{entry,index,score:8}];
+  return [];
+ });
+ return scored.sort((a,b)=>a.score-b.score||a.index-b.index).map(item=>item.entry);
+}
+export function searchResultPage<T extends Searchable>(entries:T[],query:string,limit=40){
+ const matches=rankSearchEntries(entries,query),visible=matches.slice(0,Math.max(1,Math.floor(limit)));
+ return {visible,total:matches.length,hasMore:visible.length<matches.length};
 }
