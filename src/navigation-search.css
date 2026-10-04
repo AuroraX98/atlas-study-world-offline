@@ -1,6 +1,6 @@
 .saved-places { margin: 1.3rem 0; }
 .saved-place-tabs { display: flex; gap: .45rem; flex-wrap: wrap; }
-.saved-place-tabs button { border: 1px solid var(--border, #34465c); border-radius: .6rem; padding: .45rem .7rem; color: var(--muted, #aab9cc); background: transparent; cursor: pointer; }
+.saved-place-tabs button { border: 1px solid var(--border, #34465c); border-radius: .6rem; padding: .45rem .7rem; color: var(--muted-foreground, #aab9cc); background: transparent; cursor: pointer; }
 .saved-place-tabs button.active { color: #b9f4d7; background: #b9f4d714; border-color: #b9f4d788; }
 .saved-place-list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .5rem; }
 .saved-place-row { display: flex; align-items: center; background: #0a142266; border-radius: .6rem; border: 1px solid #34465c88; min-width: 0; }
