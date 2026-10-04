@@ -1,3 +1,4 @@
+import type {AssistantLesson} from './assistant-schema';
 import {languages} from './languages';
 import {subjects,type SubjectId,type Snapshot} from './study';
 import {topicTracks,type Topic} from './learning';
@@ -9,9 +10,9 @@ export type WeeklyReflection={week:string;helped:string;difficult:string;next:st
 export type PlannerPreferences={dailyMinutes:number;busyMinutes:number;days:number[];priorities:SubjectId[]};
 export type HorizonGoal={id:string;horizon:'week'|'month'|'six-months'|'year'|'five-years';title:string;done:boolean;created_at:number;completed_at:number|null};
 export type JournalEntry={id:string;date:string;title:string;events:string;challenges:string;lessons:string;goals:string;vision:string;created_at:number;updated_at:number};
-export type WorkspaceData={journal:JournalEntry[];horizonGoals:HorizonGoal[];topics:TopicDetail[];practice:PracticeEntry[];files:EvidenceFile[];wordReviews:WordReview[];wordReviewTotals:Partial<Record<SubjectId,number>>;reflections:WeeklyReflection[];preferences:PlannerPreferences;dayModes:{day:string;mode:'normal'|'busy'|'rest'}[]};
+export type WorkspaceData={assistantLessons:AssistantLesson[];lessonCompletions:{topic_id:string;completed_at:number}[];journal:JournalEntry[];horizonGoals:HorizonGoal[];topics:TopicDetail[];practice:PracticeEntry[];files:EvidenceFile[];wordReviews:WordReview[];wordReviewTotals:Partial<Record<SubjectId,number>>;reflections:WeeklyReflection[];preferences:PlannerPreferences;dayModes:{day:string;mode:'normal'|'busy'|'rest'}[]};
 export const plannerDefaults:PlannerPreferences={dailyMinutes:45,busyMinutes:10,days:[1,2,3,4,5],priorities:['math','spanish','art']};
-export const emptyWorkspace:WorkspaceData={journal:[],horizonGoals:[],topics:[],practice:[],files:[],wordReviews:[],wordReviewTotals:{},reflections:[],preferences:plannerDefaults,dayModes:[]};
+export const emptyWorkspace:WorkspaceData={assistantLessons:[],lessonCompletions:[],journal:[],horizonGoals:[],topics:[],practice:[],files:[],wordReviews:[],wordReviewTotals:{},reflections:[],preferences:plannerDefaults,dayModes:[]};
 export const understanding=['Not started','Studied','Can explain','Can apply','Can recall later'];
 export function availableTopics(data:Snapshot): (Topic&{subject:SubjectId;custom?:boolean})[]{return [...Object.entries(topicTracks).flatMap(([subject,items])=>items.map(t=>({...t,subject:subject as SubjectId}))),...data.workspace.topics.filter(t=>t.custom).map(t=>({id:t.topic_id,title:t.title,subject:t.subject,custom:true,stage:'My topics',criterion:'Explore this topic in the way that matters to you.',reward:'Personal progress'}))]}
 export function topicDetail(data:Snapshot,id:string):TopicDetail|undefined{return data.workspace.topics.find(t=>t.topic_id===id)}

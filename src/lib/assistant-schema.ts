@@ -1,0 +1,14 @@
+import {z} from 'zod';
+import {subjectIds} from './study';
+const time=z.number().int().min(0).max(8640000000000000);
+export const providerSchema=z.enum(['openai','claude','deepseek']);
+export const focusSchema=z.object({area:z.enum(['reading','listening','grammar','vocabulary','concepts','examples','practice','quiz']),topic:z.string().max(1000),level:z.string().min(1).max(40)}).strict();
+export const lessonPreferencesSchema=z.object({tone:z.enum(['warm','direct','playful','academic']),format:z.enum(['paragraphs','bullets','mixed']),depth:z.enum(['short','balanced','in-depth']),style:z.enum(['guided questions','worked examples','lesson and practice','quiz','conversation']),explanationLanguage:z.string().min(1).max(60),variety:z.string().max(100),focus:z.array(focusSchema).min(1).max(8)}).strict();
+export type LessonPreferences=z.infer<typeof lessonPreferencesSchema>;
+export const assistantLessonSchema=z.object({id:z.string().uuid(),subject:z.enum(subjectIds).or(z.string().regex(/^custom-[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i).transform(v=>v as `custom-${string}`)),topic_id:z.string().min(1).max(100).nullable(),session_id:z.string().uuid().nullable(),title:z.string().trim().min(1).max(180),minutes:z.number().int().min(1).max(120),provider:providerSchema,model:z.string().trim().min(1).max(120),preferences:lessonPreferencesSchema,messages:z.array(z.object({id:z.string().uuid(),role:z.enum(['user','assistant']),content:z.string().min(1).max(16000),at:time}).strict()).max(100),created_at:time,updated_at:time,completed_at:time.nullable(),request_id:z.string().uuid().nullable().default(null),requested_at:time.nullable().default(null)}).strict().refine(l=>l.messages.reduce((n,m)=>n+m.content.length,0)<=180000,{message:'This lesson is full. Start a new lesson.'});
+export type AssistantLesson=z.infer<typeof assistantLessonSchema>;
+export type Provider=z.infer<typeof providerSchema>;
+export type AssistantConfig={enabled:boolean;provider:Provider;model:string;connection:'direct'|'companion';keySource?:'vault'|'file';allowKeyFile?:boolean;preferences:LessonPreferences};
+export const providerNames={openai:'OpenAI (ChatGPT models)',claude:'Claude',deepseek:'DeepSeek'};
+export const providerModels={openai:'gpt-6-astra',claude:'claude-sonnet-4-6',deepseek:'deepseek-flash'};
+export const defaultAssistant:AssistantConfig={enabled:false,provider:'openai',model:providerModels.openai,connection:'direct',keySource:'vault',allowKeyFile:false,preferences:{tone:'warm',format:'paragraphs',depth:'balanced',style:'guided questions',explanationLanguage:'English',variety:'',focus:[{area:'concepts',topic:'',level:'Beginner'}]}};

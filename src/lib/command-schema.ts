@@ -1,3 +1,4 @@
+import {assistantLessonSchema} from './assistant-schema';
 import {z} from 'zod';
 import {subjectIds,type Snapshot,type SubjectId} from './study';
 import {languageIds,topicTracks} from './learning';
@@ -24,6 +25,11 @@ export const workspaceCommands=[
 const step=z.object({id:key,text:z.string().trim().min(1).max(300),done:z.boolean()});
 export const commandSchema=z.discriminatedUnion("action",[
  ...workspaceCommands,
+ z.object({action:z.literal('assistant-save'),lesson:assistantLessonSchema,expectedLastMessageId:key.nullable(),requestId:key.nullable().default(null),claim:z.boolean().default(false)}),
+ z.object({action:z.literal('assistant-timer'),id:key,sessionId:key}),
+ z.object({action:z.literal('assistant-cancel'),id:key,requestId:key}),
+ z.object({action:z.literal('assistant-finish'),id:key,wordCount:z.number().int().min(0).max(100000)}),
+ z.object({action:z.literal('lesson-complete'),topicId:z.string().min(1).max(100),answer:z.number().int().min(0).max(2),canExplain:z.literal(true),practiceId:key}),
  z.object({action:z.literal('journal-save'),id:key,date:day,title:z.string().max(180),events:z.string().max(10000),challenges:z.string().max(10000),lessons:z.string().max(10000),goals:z.string().max(10000),vision:z.string().max(10000)}),
  z.object({action:z.literal('subject-create'),id:key,name:z.string().trim().min(1).max(60)}),
  z.object({action:z.literal('horizon-goal-add'),id:key,horizon:z.enum(['week','month','six-months','year','five-years']),title:z.string().trim().min(1).max(500)}),
