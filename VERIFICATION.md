@@ -2,7 +2,15 @@
 
 Verified on 3 October 2026, using macOS and the Codex in-app browser. This is a review build, not a claim that every operating system, browser, or possible input has been tested.
 
-## Result
+## Navigation update — v1.1.0-preview.2
+
+Checked on 3 October 2026 in an isolated browser database at port 5180. Existing personal progress at 5175 was not used for these tests.
+
+Browser checks opened Today, Subjects, Study world, Goals, Rewards, Progress, Journal, and Assistant. A Physics topic carried its subject, aim, and difficulty into Assistant. Missing AI setup linked directly to the AI settings section. Continue studying reopened the topic, and refreshing retained the exact topic dialog. Journal writing survived immediate navigation; exact search reopened that journal entry and a specific goal. A pinned entry appeared on Today. Ctrl+K opened Search. A live topic timer remained available on Progress, paused, and ended with actual study time saved. Browser Back recovered an unfinished weekly reflection draft. Language selection opened the German subject workspace. Settings exposed separate Study preferences, AI assistant, and Data & backups sections. All eight pages fit the effective 375-pixel viewport without horizontal page overflow; the viewport was restored afterward. No browser console errors appeared during these navigation checks.
+
+Regression checks cover navigation hash parsing, legacy path mapping, unknown settings/credentials excluded from saved routes, stale record fallback, exact result destinations, pin/recent limits, local draft validation/recovery, safe draft clearing when newer edits exist, and older gallery targets beyond list limits. Existing data, lesson, timer, backup, report, credential-request isolation, and journal checks still pass. Direct file opening and Windows hardware remain manual checks.
+
+## Earlier preview verification
 
 All seven main pages opened: Today, Study world, Learning, Quests, Collection, Journal, and Assistant. The core workflows passed the browser checks below. The source audit covered the remaining controls and handlers; automated checks covered data limits, concurrency, rewards, storage, exports, lessons, and provider requests.
 

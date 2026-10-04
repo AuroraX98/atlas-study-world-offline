@@ -1,5 +1,16 @@
 # Changes
 
+## v1.1.0-preview.2 — 3 October 2026
+
+- Renamed Quests and Collection to Goals and Rewards; separated weekly progress and study history from Journal.
+- Added subject workspaces with learning paths, notes, practice, rewards, and subject/topic-aware timer and AI shortcuts.
+- Added Continue studying, browser Back, location trails, remembered sections/filters/scroll positions, and a timer available across pages.
+- Added exact saved-item search, Cmd/Ctrl+K, recent items, pinned favorites, and saved AI conversation reopening.
+- Organized Settings into Study preferences, AI assistant, and Data & backups, with visible header labels and actionable lesson requirements.
+- Kept unfinished journal, weekly reflection, topic practice, language practice, and subject practice drafts locally while navigating.
+
+Core progress remains in the existing local database. AI account setup and optional protected key storage remain available. Existing manual platform checks still apply.
+
 ## v1.1.0-preview.1 — 3 October 2026
 
 - Added 96 built-in lessons with difficulty labels, plain explanations, term definitions, examples, understanding checks, and completion rewards.

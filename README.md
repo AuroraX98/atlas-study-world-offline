@@ -1,12 +1,25 @@
 # Atlas Study World — Offline Study Tracker, Study Planner & Pomodoro Timer
 
-**Current public preview: v1.1.0-preview.1.** The latest app includes built-in lessons and optional AI assistance. See [verification and remaining platform checks](VERIFICATION.md).
+**Current public preview: v1.1.0-preview.2.** The latest app includes built-in lessons and optional AI assistance. See [verification and remaining platform checks](VERIFICATION.md).
 
 **An offline study tracker and study planner for macOS and Windows.** Download one HTML file to track study time with a Pomodoro timer, organize short-term and long-term goals, review weekly progress, and keep a personal study journal. Automatic local saving and 3D achievement islands help you see your progress, with no login required.
 
 Support your **language learning** with a vocabulary tracker for 50 languages and reachable word-count milestones through 50,000 words. Explore 96 built-in lessons in Math, Physics, Quantum Physics, Coding, AI, and Art. An optional **AI study assistant** can generate personalized lessons with DeepSeek, OpenAI, or Claude; it requires internet access and your own API account.
 
-[**Download Atlas HTML**](https://github.com/AuroraX98/atlas-study-world-offline/releases/download/v1.1.0-preview.1/atlas-study-world.html) · [**Download app + companion ZIP**](https://github.com/AuroraX98/atlas-study-world-offline/releases/download/v1.1.0-preview.1/Atlas-Study-World.zip) · [Current preview release](https://github.com/AuroraX98/atlas-study-world-offline/releases/tag/v1.1.0-preview.1) · [Quick start](QUICK-START.md)
+[**Download Atlas HTML**](https://github.com/AuroraX98/atlas-study-world-offline/releases/download/v1.1.0-preview.2/atlas-study-world.html) · [**Download app + companion ZIP**](https://github.com/AuroraX98/atlas-study-world-offline/releases/download/v1.1.0-preview.2/Atlas-Study-World.zip) · [Current preview release](https://github.com/AuroraX98/atlas-study-world-offline/releases/tag/v1.1.0-preview.2) · [Quick start](QUICK-START.md)
+
+## Find your way around
+
+- **Today:** Continue studying, recent items, pinned favorites, your daily plan, and reviews.
+- **Subjects:** Choose a subject or language. Its Overview, Learning path, Notes, Practice, and Rewards stay together. Start studying prepares the timer; Generate an AI lesson carries your subject into Assistant.
+- **Study world:** Explore islands and use the full focus timer. An active timer remains available while you visit other pages.
+- **Goals / Rewards / Progress / Journal / Assistant:** Plan goals; explore achievements; review weekly reports and study history; write personal entries; or build optional AI lessons.
+
+Use **Search** (Cmd+K on Mac, Ctrl+K on Windows) to open a specific topic, goal, journal entry, practice record, file, reward, weekly reflection, or saved AI lesson. Pin useful search results for quick access on Today. Use browser Back and the location trail to return to earlier sections. Atlas remembers the selected subject, subsection, filters, and scroll position in this browser. Continue studying reopens your last study place without starting a new timer.
+
+**Settings** has Study preferences, AI assistant, and Data & backups. **Backups** opens that data section directly. AI forms show outstanding requirements with links to the relevant fields. Expand Help finding your way or the local help beside a form for short explanations.
+
+Navigation, recent items, pins, and local writing drafts are browser convenience settings separate from the progress database. Pins retain titles and location IDs; they do not store note bodies or API keys. Progress backups include saved records, not these convenience settings. Finish saving weekly reflections and completed practice to include them in reports and backups. A failed save keeps the current journal draft and prevents leaving that editor.
 
 ## Start studying
 
@@ -22,9 +35,9 @@ The app includes all its JavaScript, styles, and 3D graphics. Tracking works wit
 - **Included study lessons:** 96 concise lessons labeled Beginner, Intermediate, or Advanced explain every existing Math, Physics, Quantum Physics, Coding, AI, and Art topic in plain language, with examples, definitions that open on hover or tap, and an understanding check. Completing the check and confirming you can explain the idea updates your topic, practice, review, and rewards automatically. Advanced lessons introduce the ideas; full specialist calculations need further study.
 - **Optional study assistant:** Choose OpenAI, Claude, or DeepSeek in Settings. Build lessons around your subject, aim, difficulty, duration, tone, format, and explanation depth. Language lessons support any combination of reading, listening, grammar, and vocabulary, each with its own topic and level. Saved conversations remain local, and completion syncs actual timer time, practice, studied topics, and the word count you report. AI is disabled by default.
 - **Study and learning:** Math, Physics, Quantum Physics, Coding, AI, Art, and 50 language choices. Add your own subjects and personal learning milestones.
-- **Focus and achievements:** Pomodoro study time credited automatically to the selected subject; pauses and breaks excluded; hour levels, topic badges, practice, review, goal, and vocabulary achievements. Display rewards on immersive 3D islands or use calm mode.
+- **Focus and achievements:** Pomodoro study time credited automatically to the selected subject; pauses and breaks excluded; hour levels, topic badges, practice, review, goal, and vocabulary achievements. Display rewards from Rewards on immersive 3D islands or use calm mode.
 - **Language vocabulary:** Separate word counts and reviews for each language; 243 reachable vocabulary milestones through 50,000 words. After 100 words, the next milestones are 150, 200, 250, 300, and 350. Counts are self-reported; entering the actual words is optional and not required.
-- **Goals and weekly progress:** Quests with steps and time invested; a goal board for this week, this month, six months, one year, and five years; weekly study charts and accomplishment reports. Download printable HTML posters or choose **Print / Save PDF**.
+- **Goals and weekly progress:** Quests with steps and time invested; a goal board in Goals for this week, this month, six months, one year, and five years; weekly study charts and accomplishment reports in Progress. Download printable HTML posters or choose **Print / Save PDF**.
 - **Journal and study materials:** Autosaving journal entries with prompts for events, challenges, lessons, goals, and vision. Export one entry or the complete journal as Word `.docx`, Markdown, text, or through **Print / Save PDF**. Keep topic notes, study questions, and local attachments together. Copy a study prompt into your chosen AI Assistant when desired.
 
 ## Where your data lives

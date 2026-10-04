@@ -8,7 +8,7 @@ The AI study assistant is optional. Atlas tracking and built-in lessons work off
 2. Extract the download ZIP. Keep the HTML, companion files, and launchers together.
 3. Open **Start Atlas on Mac.command** on Mac or **Start Atlas on Windows.cmd** on Windows. Keep its terminal window open.
 4. Open **http://127.0.0.1:5175/** in your browser.
-5. In Atlas Settings, enable AI study lessons, choose your provider and model, and select **Local companion on this computer**.
+5. Open **Settings → AI assistant**, enable AI study lessons, and choose your provider. Open **Advanced connection settings** to choose the model and **Local companion on this computer** connection.
 
 You can open the HTML directly for offline tracking. Using a saved OS credential or the optional local API-key file requires the local companion. If moving from another Atlas address or the downloaded HTML, export and restore your progress backup; browser storage is separate for each address.
 
@@ -34,8 +34,8 @@ The default file is:
 
 To set it up:
 
-1. Start the companion, open Atlas Settings, and choose **Local companion on this computer**.
-2. Check **Allow local key-file access**, then choose **Local API-key file** as the key source.
+1. Start the companion, open Settings → AI assistant → Advanced connection settings, and choose **Local companion on this computer**.
+2. Expand **Optional local API-key file**, then check **Allow local key-file access**, then choose **Local API-key file** as the key source.
 3. Click **Create empty template**. It creates the file only if one does not already exist; it will not overwrite your existing keys.
 4. Open that file in a plain-text editor. Put your provider key between the empty quotes beside its provider name, then save the file.
 5. Choose that provider in Atlas. Leave **API key for this tab** empty so the companion uses the selected file source.
@@ -68,7 +68,7 @@ Never upload a filled key file to GitHub, include it in a source archive, or att
 | Disable **Allow local key-file access** | Stops file-based key use. The file and its contents remain on your computer. |
 | Revoke the key in your provider’s account | Makes the key stop working wherever it is used. |
 
-To remove a saved key in Atlas, open **Settings**, choose its provider, and click **Forget saved key**. Other open Atlas tabs may still hold a temporary copy: clear their fields or close those tabs too.
+To remove a saved key in Atlas, open **Settings → AI assistant**, choose its provider, and click **Forget saved key**. Other open Atlas tabs may still hold a temporary copy: clear their fields or close those tabs too.
 
 ### Remove it manually on Mac
 
