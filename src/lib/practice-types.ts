@@ -1,0 +1,5 @@
+export type PracticeObjective={id:string;title:string;prerequisites:string[];misconceptions:string[]};
+export type ExercisePurpose='example'|'guided'|'independent'|'transfer'|'application'|'review';
+export type PracticeExercise={id:string;objectiveId:string;purpose:ExercisePurpose;difficulty:'core'|'extension';format:'number'|'choice'|'text'|'rubric';prompt:string;choices?:string[];answer?:number;acceptedAnswers?:string[];tolerance?:number;hints:string[];solution:{step:string;why:string}[];mistakes:{answer:string;feedback:string}[];rubric?:string[]};
+export type PracticeBank={topicId:string;version:number;scope:string;reviewStatus:'awaiting-subject-review';sources:string[];objectives:PracticeObjective[];exercises:PracticeExercise[]};
+export type ExerciseAttempt={id:string;topic_id:string;exercise_id:string;content_version:number;answer:string;hint_count:number;solution_revealed:boolean;status:'draft'|'correct'|'incorrect'|'self-reviewed';reflection:string;created_at:number;updated_at:number;review_at:number|null;submitted_at:number|null;hint_count_on_submit:number|null;solution_on_submit:boolean|null};

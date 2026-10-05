@@ -7,6 +7,8 @@ const subject=z.enum(subjectIds).or(z.string().regex(/^custom-[0-9a-f]{8}-[0-9a-
 export const plannerSchema=z.object({dailyMinutes:z.number().int().min(5).max(360),busyMinutes:z.number().int().min(5).max(60),days:z.array(z.number().int().min(0).max(6)).max(7),priorities:z.array(subject).min(1).max(subjectIds.length+100)});
 const link=z.string().max(2000).refine(v=>!v||/^https:\/\//i.test(v)&&(()=>{try{const url=new URL(v);return url.protocol==='https:'&&!url.username&&!url.password}catch{return false}})());
 export const workspaceCommands=[
+ z.object({action:z.literal('exercise-save'),id:key,topicId:z.string().min(1).max(100),exerciseId:z.string().min(1).max(100),contentVersion:z.number().int().min(1),answer:z.string().max(5000),hintCount:z.number().int().min(0).max(100),solutionRevealed:z.boolean(),reflection:z.string().max(5000),submit:z.boolean(),expectedUpdatedAt:z.number().int().min(0).nullable()}),
+ z.object({action:z.literal('lesson-open'),topicId:z.string().min(1).max(100)}),
  z.object({action:z.literal('topic-create'),id:key,subject,title:z.string().trim().min(1).max(180),note:z.string().max(5000).default('')}),
  z.object({action:z.literal('topic-note'),topicId:z.string().min(1).max(100),note:z.string().max(5000),blocker:z.string().max(2000),nextStep:z.string().max(1000)}),
  z.object({action:z.literal('topic-level'),topicId:z.string().min(1).max(100),level:z.number().int().min(0).max(4)}),
