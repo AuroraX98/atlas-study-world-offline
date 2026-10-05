@@ -1,8 +1,8 @@
 {
   "name": "atlas-study-world-offline",
-  "version": "1.1.0-preview.3",
+  "version": "1.1.0-preview.4",
   "private": true,
-  "description": "Offline 3D study tracker, Pomodoro timer, goals and language vocabulary achievements for macOS and Windows.",
+  "description": "Offline study planner and 96-topic practice app with hints, worked solutions, saved attempts, Pomodoro tracking and 3D rewards for macOS and Windows.",
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",

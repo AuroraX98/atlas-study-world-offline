@@ -4,11 +4,15 @@ Atlas is an offline study tracker with a Pomodoro timer, 3D islands, learning ac
 
 ## Open the app
 
-1. Download `atlas-study-world.html` from [the current preview release](https://github.com/AuroraX98/atlas-study-world-offline/releases/tag/v1.1.0-preview.3).
+1. Download `atlas-study-world.html` from [the current preview release](https://github.com/AuroraX98/atlas-study-world-offline/releases/tag/v1.1.0-preview.4).
 2. Keep it in a permanent folder and open it in Chrome or Edge in a normal browser window.
-3. Choose a subject or language, add a goal, and start a focus session. Core tracking and built-in lessons work offline.
+3. Choose a subject or language, add a goal, and start a focus session. Core tracking, built-in lessons, and the 96 topic practice banks work offline.
 
 Progress is stored in your browser profile on this computer, separately from the HTML. Journal entries autosave as you type; topic notes have a Save note button. Wait for the saved confirmation. If Atlas reports that it cannot save, resolve that error before relying on the app.
+
+## Practice
+
+Open Subjects, choose a topic, and open Practice. Use staged hints or explained solutions when needed. Exercise drafts and attempts save locally; wait for saved confirmation. Submitted answers stay fixed, and another attempt records a revision. Open writing, design, and art tasks use self-review rubrics. Progress backups include saved practice work.
 
 ## Find what you need
 

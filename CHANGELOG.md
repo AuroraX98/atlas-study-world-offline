@@ -1,5 +1,15 @@
 # Changes
 
+## v1.1.0-preview.4 — 5 October 2026
+
+- Added 96 offline topic banks with 384 objectives, 1,695 learner tasks and 240 worked examples.
+- Added staged hints, explained solutions, guided and independent work, applications and fresh review.
+- Preserved drafts, submitted attempts and help exposure; showed checked answers separately from rubric self-review.
+- Added backup version 3 with practice records, older-backup imports and conflict validation.
+- Protected unfinished exercise work during reload, navigation and backup export.
+
+TypeScript, all 10 source regression suites and the fresh standalone build passed. Specialist/learner review, direct-file/native checks, complete UI backup checks and accessibility review remain pending.
+
 ## v1.1.0-preview.3 — 3 October 2026
 
 - Completed a 100-check navigation review with evidence and remaining checks in NAVIGATION-REVIEW.md.
