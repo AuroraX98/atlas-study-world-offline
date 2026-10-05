@@ -21,3 +21,12 @@ await import('../.test-build/assistant-drafts.test.mjs');
 
 await build({entryPoints:['tests/horizon-goal-draft.test.ts'],bundle:true,platform:'node',format:'esm',outfile:'.test-build/horizon-goal-draft.test.mjs',packages:'external',jsx:'automatic',alias:{'@':'./src'}});
 await import('../.test-build/horizon-goal-draft.test.mjs');
+
+await build({entryPoints:['tests/practice-storage.test.ts'],bundle:true,platform:'node',format:'esm',outfile:'.test-build/practice-storage.test.mjs',packages:'external',jsx:'automatic',alias:{'@':'./src'}});
+await import('../.test-build/practice-storage.test.mjs');
+
+await build({entryPoints:['tests/practice-content.test.ts'],bundle:true,platform:'node',format:'esm',outfile:'.test-build/practice-content.test.mjs',packages:'external',jsx:'automatic',alias:{'@':'./src'}});
+await import('../.test-build/practice-content.test.mjs');
+
+await build({entryPoints:['tests/practice-draft.test.ts'],bundle:true,platform:'node',format:'esm',outfile:'.test-build/practice-draft.test.mjs',packages:'external',jsx:'automatic',alias:{'@':'./src'}});
+await import('../.test-build/practice-draft.test.mjs');

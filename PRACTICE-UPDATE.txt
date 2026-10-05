@@ -1,0 +1,136 @@
+Atlas offline practice update — October 5, 2026
+
+Baseline
+The current main source was rechecked at commit
+921535449c14fa7ea9d7e96e5e3424e3d0d8dfcc, matching the audit pin.
+The checkout was clean before changes. This update adds offline practice to all
+96 declared non-language topics, preserving the existing workspace and rewards.
+
+Learning flow
+Every bank has inspectable objectives, prerequisites, misconceptions, scope,
+source references, stable exercise IDs and content version. Task sets include
+examples, guided and independent work, reasoning, applications and fresh review.
+Hints reveal in stages. Worked solutions explain steps and their reasons.
+Number, choice and bounded text answers are checked locally. Number answers
+accept decimal, scientific notation or numeric fractions; units are specified
+in the task. Text tasks list canonical accepted responses rather than evaluating
+arbitrary algebra or code. Code writing, AI design and art projects use explicit
+self-review criteria and model approaches. No learner code is executed.
+
+Learning records
+The app records lesson openings, saved introductory checks, exercise attempts,
+assistance exposure and review reminders separately from self-assessed topic
+levels. A submitted response remains immutable; another attempt records a
+revision. Saved drafts, hint use, solution exposure and reflection persist in
+IndexedDB. Same-attempt concurrent edits require the expected saved timestamp.
+Prior help or a submitted attempt prevents a retry from gaining first-answer
+credit. First-submission timestamps and assistance snapshots remain fixed, so
+reading a solution after an unaided answer preserves that first-answer record.
+Later-check evidence requires a fresh review task opened at least a day
+after an earlier task's first submission. Counts are evidence of these
+specific tasks, not proof of proficiency, comprehension or lasting retention.
+
+Backups
+Export version 3 includes saved exercise drafts, attempts and lesson openings.
+Version 2 and legacy backups still import, defaulting missing fields to empty
+arrays. All exercise/topic/version links and checked statuses are validated.
+Duplicate incoming IDs and conflicting same-ID identities are rejected.
+Matching identities keep the current local saved record, including its revision
+and assistance flags. The complete candidate is validated before applying it;
+IndexedDB acknowledges only a committed transaction. Practice records introduce
+no credential fields. Browser convenience drafts not yet saved to IndexedDB
+remain on the original device; check the saved-state message before exporting.
+
+Verification commands
+Normal dependency-installed environment:
+  npm run typecheck
+  npm test
+  npm run build
+Windows hosts that block Node subprocess pipes but permit the esbuild CLI:
+  powershell -File scripts/verify-windows.ps1
+The fallback runs the same tests, bundles the current source with the pinned
+esbuild executable and packages fresh JavaScript/CSS into one standalone HTML.
+It does not reuse the previous committed app artifact.
+
+Content and platform limits
+The new banks are authored content awaiting subject specialist review. Internal
+answer checks and spot checks do not certify subject accuracy across all tasks.
+No representative learner study has established ten-year-old comprehension,
+independent proficiency or learning outcomes. The topic list is the app's list,
+not a complete external curriculum. Language and custom-subject course banks
+are outside this content update. Native Windows Credential Manager, macOS
+direct-file behavior, a full browser/profile recovery matrix, complete WCAG
+evaluation and live optional AI compatibility need separate validation.
+
+Checkpoint verification results — October 5, 2026
+96 topic banks, 384 objectives, 1,695 learner tasks and 240 worked examples.
+Whole Number Operations has 28 learner tasks and 4 worked examples.
+The final Windows verification run passed TypeScript checking and all nine
+source regression suites, then produced a fresh standalone production build.
+Companion checks: 38 passed; 2 platform-specific checks skipped.
+
+Chrome on Windows, localhost HTTP, disposable practice data:
+Checked incorrect and correct answers, new attempts, saved history, first-answer
+evidence, solution exposure after submission, topic reopening and page reload.
+Browser checks revealed and corrected submission timing and initial loading
+issues. Queued submission recovery was reviewed; storage/report regressions
+confirm assistance snapshots and first submission dates remain fixed.
+No browser console errors were observed in the sampled journey.
+
+Complete UI backup export/restore remains unverified: download capture timed
+out, and the Chrome extension refused local file upload because file URL access
+was disabled. No extension permissions were changed. The requested viewport
+override did not change the actual 1920-pixel page width, so this checkpoint
+does not claim a new mobile layout validation. Backup schema, migration,
+round-trip, conflict and rollback behavior passed automated storage tests.
+
+Standalone HTML SHA256:
+2D267F504AB52F8271867F3C2506D522344FDC5841CB7A321E7C35BACCC405F5
+
+Work was canceled before GitHub publication. This is a local implementation
+checkpoint, not a release approval. No branch was pushed, PR opened, merge
+performed or release published. Resume with subject/content review and the
+remaining platform checks before considering a public release.
+
+Resumed implementation verification — October 5, 2026
+The user resumed work from checkpoint 4cd42de. Main still matched 9215354.
+Final review found and corrected ordinary draft UUID rejection and disagreement
+between cached work and a submitted answer. Divergent cached work now becomes
+a separate attempt, preserving its text and the original submitted record.
+Task/filter changes, app navigation and backup export await the exercise save;
+failed saves retain the current view. Unavailable browser draft storage is
+disclosed, with unload protection for work not yet saved. Numeric parsing also
+rejects nonfinite operands as a defensive check before fraction division.
+
+All 10 source regression suites and TypeScript checks passed after these edits.
+The fresh standalone build passed; its SHA256 is:
+E0B40BE2804CED7B3F033629CBF16796BB4F327C6DDD6E4601CADF1112B5F17A
+In Chrome on Windows over localhost HTTP, typing an answer and method followed
+by immediate reload preserved both fields when the task was reopened.
+An independent Sol check confirmed the generated counts and sampled 19 advanced
+answers with numerical differentiation, quadrature, matrix arithmetic, partial
+trace, degeneracy and CHSH checks. Additional Python/AI/rubric samples revealed
+no confirmed content defect. Sol reviewed the actual recovery/navigation fixes.
+These checks do not substitute for the still-pending subject/learner studies,
+direct-file/native-platform or full browser backup/accessibility validation.
+
+Team Effort attempted Flash, then Luna, then Sol text review. Flash exhausted
+its output limit; later proposed reports were not accepted by the service's
+checker. Their concrete source findings were independently checked and fixed;
+the actual final edits received the separate native Sol review described above.
+No claim is made that the plugin accepted its text report.
+
+The updated source and HTML are prepared for a draft PR. This update is not a
+release certification; merge and release remain separate user decisions.
+
+GitHub publication limitation
+Source objects were uploaded and their Git blob hashes verified. The generated
+2.53 MB HTML upload was rejected by automatic approval review because the full
+action exceeded the reviewer's input budget; it was not executed. The normal
+Git upload path also failed in this host's credential-helper subprocess.
+The draft PR therefore carries the source changes and verification notes.
+Its tracked standalone HTML remains the audited artifact until the new HTML is
+added separately. The refreshed local downloadable HTML contains all changes,
+with the final SHA256 above. Add that HTML to the PR branch before merging or
+publishing a release. Browser task navigation also preserved the newest method
+text when moving forward and back in the final Windows Chrome HTTP check.
